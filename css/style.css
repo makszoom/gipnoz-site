@@ -29,11 +29,20 @@ html {
 
 body {
   font-family: var(--font);
-  background: var(--bg);
+  background: var(--bg) url('bg-dark.jpg') center center / cover no-repeat fixed;
   color: var(--text);
   line-height: 1.7;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
+  position: relative;
+}
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(13,13,13,0.78);
+  z-index: -1;
+  pointer-events: none;
 }
 
 a {
@@ -48,8 +57,9 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(13,13,13,.92);
-  backdrop-filter: blur(8px);
+  background: rgba(13,13,13,.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
   height: var(--header-h);
   display: flex;
