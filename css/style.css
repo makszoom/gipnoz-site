@@ -15,11 +15,29 @@
   --accent-hover: #8b5cf6;
   --accent-dim: rgba(124, 58, 237, 0.15);
   --border: #222;
+  --bg-code: #111;
+  --overlay: rgba(13,13,13,0.78);
+  --header-bg: rgba(13,13,13,.75);
   --radius: 12px;
   --radius-sm: 8px;
   --font: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --max-w: 800px;
   --header-h: 60px;
+}
+
+[data-theme="light"] {
+  --bg: #f5f5f5;
+  --bg-card: #ffffff;
+  --bg-hover: #f0f0f0;
+  --text: #1a1a1a;
+  --text-muted: #666;
+  --accent: #6d28d9;
+  --accent-hover: #7c3aed;
+  --accent-dim: rgba(109, 39, 217, 0.1);
+  --border: #e0e0e0;
+  --bg-code: #f5f5f5;
+  --overlay: rgba(255,255,255,0.5);
+  --header-bg: rgba(255,255,255,.85);
 }
 
 html {
@@ -40,7 +58,7 @@ body::before {
   content: '';
   position: fixed;
   inset: 0;
-  background: rgba(13,13,13,0.78);
+  background: var(--overlay);
   z-index: -1;
   pointer-events: none;
 }
@@ -52,12 +70,27 @@ a {
 }
 a:hover { color: var(--accent-hover); }
 
+/* ===== THEME TOGGLE ===== */
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  transition: color .2s;
+  line-height: 1;
+  margin-left: 16px;
+}
+.theme-toggle:hover { color: var(--text); }
+
 /* ===== HEADER ===== */
 header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(13,13,13,.75);
+  background: var(--header-bg);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
@@ -87,6 +120,10 @@ header {
 
 .logo span { color: var(--accent); }
 
+nav {
+  display: flex;
+  align-items: center;
+}
 nav a {
   color: var(--text-muted);
   font-size: .9rem;
@@ -286,7 +323,7 @@ section { margin-bottom: 60px; }
 }
 .script-card h3 { font-size: 1rem; margin-bottom: 8px; }
 .script-card .script-text {
-  background: #111;
+  background: var(--bg-code);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   padding: 16px;
@@ -295,6 +332,9 @@ section { margin-bottom: 60px; }
   color: #ccc;
   line-height: 1.6;
   font-size: .9rem;
+}
+[data-theme="light"] .script-card .script-text {
+  color: #444;
 }
 .script-tags {
   display: flex;
@@ -322,6 +362,7 @@ footer a:hover { color: var(--accent); }
   main { padding: 24px 16px 60px; }
   .header-inner { padding: 0 16px; }
   nav a { margin-left: 16px; font-size: .82rem; }
+  .theme-toggle { margin-left: 8px; font-size: 1rem; }
   .card { padding: 16px; }
   .lesson-item { padding: 10px 16px; }
 }
@@ -354,14 +395,14 @@ footer a:hover { color: var(--accent); }
 .lesson-video {
   width: 100%;
   aspect-ratio: 16/9;
-  background: #111;
+  background: var(--bg-code);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   margin-bottom: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--text-muted);
-  border: 1px solid var(--border);
 }
 .lesson-nav {
   display: flex;
@@ -374,7 +415,7 @@ footer a:hover { color: var(--accent); }
 
 /* ===== SCRIPT BLOCK INSIDE LESSON ===== */
 .script-block {
-  background: #111;
+  background: var(--bg-code);
   border-left: 3px solid var(--accent);
   border-radius: var(--radius-sm);
   padding: 16px 20px;

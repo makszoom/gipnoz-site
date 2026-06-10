@@ -19,6 +19,9 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/109680006" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+<script>
+(function(){var t=localStorage.getItem("theme");if(t==="light"){document.documentElement.setAttribute("data-theme","light")}})();
+</script>
 </head>
 <body>
 
@@ -30,6 +33,7 @@
       <a href="../modules.html">Уроки</a>
       <a href="../scripts.html" class="active">Скрипты</a>
       <a href="../about.html">О проекте</a>
+      <button class="theme-toggle" onclick="toggleTheme()" title="Сменить тему">🌙</button>
     </nav>
   </div>
 </header>
@@ -183,5 +187,9 @@
   <p style="margin-top:12px;"><a href="../about.html">О проекте</a> • <a href="../donate.html">Поддержать</a></p>
 </footer>
 
+<script>
+function toggleTheme(){var h=document.documentElement;if(h.getAttribute("data-theme")==="light"){h.removeAttribute("data-theme");localStorage.setItem("theme","dark");document.querySelector(".theme-toggle").textContent="🌙"}else{h.setAttribute("data-theme","light");localStorage.setItem("theme","light");document.querySelector(".theme-toggle").textContent="☀️"}}
+(function(){var b=document.querySelector(".theme-toggle");if(b&&document.documentElement.getAttribute("data-theme")==="light")b.textContent="☀️"})();
+</script>
 </body>
 </html>
