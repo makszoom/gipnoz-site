@@ -1,0 +1,36 @@
+#!/bin/bash
+FFMPEG=/tmp/ffmpeg.exe
+INPUT="/d/гипноз/МК Продвинутые техники гипноза.mp4"
+OUTDIR="/d/гипноз/видео для уроков/нарезка"
+
+# 27 segments based on transcript transitions
+$FFMPEG -y -ss 00:00:00    -to 00:08:51    -i "$INPUT" -c copy "$OUTDIR/01-opening.mp4"
+$FFMPEG -y -ss 00:08:51    -to 00:11:52    -i "$INPUT" -c copy "$OUTDIR/02-4-forbidden-words.mp4"
+$FFMPEG -y -ss 00:11:52    -to 00:13:06    -i "$INPUT" -c copy "$OUTDIR/03-what-is-hypnosis.mp4"
+$FFMPEG -y -ss 00:13:06    -to 00:19:39    -i "$INPUT" -c copy "$OUTDIR/04-conscious-subconscious.mp4"
+$FFMPEG -y -ss 00:19:39    -to 00:25:55    -i "$INPUT" -c copy "$OUTDIR/05-critical-factor.mp4"
+$FFMPEG -y -ss 00:25:55    -to 00:31:00    -i "$INPUT" -c copy "$OUTDIR/06-how-suggestion-works.mp4"
+$FFMPEG -y -ss 00:31:00    -to 00:38:44    -i "$INPUT" -c copy "$OUTDIR/07-cases-examples.mp4"
+$FFMPEG -y -ss 00:38:44    -to 00:42:57    -i "$INPUT" -c copy "$OUTDIR/08-phenomena-mention.mp4"
+$FFMPEG -y -ss 00:42:57    -to 00:52:54    -i "$INPUT" -c copy "$OUTDIR/09-trance-stages-somnambulism.mp4"
+$FFMPEG -y -ss 00:52:54    -to 01:02:38    -i "$INPUT" -c copy "$OUTDIR/10-somnambulism-deep.mp4"
+$FFMPEG -y -ss 01:02:38    -to 01:05:12    -i "$INPUT" -c copy "$OUTDIR/11-instant-principles-preview.mp4"
+$FFMPEG -y -ss 01:05:12    -to 01:27:45    -i "$INPUT" -c copy "$OUTDIR/12-compliance.mp4"
+$FFMPEG -y -ss 01:27:45    -to 01:37:48    -i "$INPUT" -c copy "$OUTDIR/13-session-control.mp4"
+$FFMPEG -y -ss 01:37:48    -to 01:59:57    -i "$INPUT" -c copy "$OUTDIR/14-elman-start-body-scan.mp4"
+$FFMPEG -y -ss 01:59:57    -to 02:35:00    -i "$INPUT" -c copy "$OUTDIR/15-elman-amnesia-numbers.mp4"
+$FFMPEG -y -ss 02:35:00    -to 02:55:36    -i "$INPUT" -c copy "$OUTDIR/16-elman-tests.mp4"
+$FFMPEG -y -ss 02:55:36    -to 03:02:29    -i "$INPUT" -c copy "$OUTDIR/17-shortened-versions.mp4"
+$FFMPEG -y -ss 03:02:29    -to 03:36:18    -i "$INPUT" -c copy "$OUTDIR/18-demo-shortened.mp4"
+$FFMPEG -y -ss 03:36:18    -to 04:00:27    -i "$INPUT" -c copy "$OUTDIR/19-hidden-tests.mp4"
+$FFMPEG -y -ss 04:00:27    -to 04:30:17    -i "$INPUT" -c copy "$OUTDIR/20-instant-inductions.mp4"
+$FFMPEG -y -ss 04:30:17    -to 04:46:25    -i "$INPUT" -c copy "$OUTDIR/21-phenomena-aphasia-amnesia.mp4"
+$FFMPEG -y -ss 04:46:25    -to 05:01:04    -i "$INPUT" -c copy "$OUTDIR/22-direct-suggestion.mp4"
+$FFMPEG -y -ss 05:01:04    -to 05:07:21    -i "$INPUT" -c copy "$OUTDIR/23-tests-phenomena-2.mp4"
+$FFMPEG -y -ss 05:07:21    -to 05:38:39    -i "$INPUT" -c copy "$OUTDIR/24-therapy.mp4"
+$FFMPEG -y -ss 05:38:39    -to 05:50:02    -i "$INPUT" -c copy "$OUTDIR/25-compounding.mp4"
+$FFMPEG -y -ss 05:50:02    -to 05:57:36    -i "$INPUT" -c copy "$OUTDIR/26-gypsy-hypnosis.mp4"
+$FFMPEG -y -ss 05:57:36    -to 05:59:46    -i "$INPUT" -c copy "$OUTDIR/27-closing.mp4"
+
+echo "=== All 27 segments done ==="
+ls -lh "$OUTDIR"/
