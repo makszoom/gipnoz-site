@@ -169,7 +169,7 @@
       "lessons": [
         {
           "id": "adv1",
-          "file": "Gerald Kein - Advanced Hypnosis training - Adv1.avi",
+          "file": "Adv1 - Rapid & Instant Inductions.mp4",
           "title": "Rapid & Instant Inductions",
           "topics": [
             "The hypnotist's toolkit — many inductions, not one",
@@ -182,7 +182,7 @@
         },
         {
           "id": "adv2",
-          "file": "Gerald Kein - Advanced Hypnosis training - Adv2.avi",
+          "file": "Adv2 - Universal Therapy - Case Study Jane.mp4",
           "title": "Universal Therapy & Case Study: Jane",
           "topics": [
             "What Universal Therapy is and how it evolved",
@@ -195,7 +195,7 @@
         },
         {
           "id": "adv3",
-          "file": "Gerald Kein - Advanced Hypnosis training - Adv3.avi",
+          "file": "Adv3 - Emotional Release & Regression.mp4",
           "title": "Emotional Release & Regression",
           "topics": [
             "Deathbed therapy — unresolved grief",
@@ -209,32 +209,22 @@
         {
           "id": "adv4",
           "file": "Adv4 - Marketing & Age Regression.mp4",
-          "title": "Marketing Your Hypnosis Practice",
+          "title": "Marketing Your Practice & Age Regression",
           "topics": [
             "Setting up your office and business",
             "Brochures, business cards, and professional materials",
             "The 5-mile walk — street marketing technique",
             "Working 20-40 hours per week sustainably",
             "Getting referrals from doctors and other professionals",
-            "Building client base from zero"
-          ]
-        },
-        {
-          "id": "adv5",
-          "file": "Adv4 - Marketing & Age Regression.mp4",
-          "title": "Age Regression — The Corridor Technique",
-          "topics": [
-            "The corridor visualization method",
-            "Doors representing years of life",
-            "Green/red button technique",
-            "Releasing traumatic memories",
-            "Working with early childhood events",
+            "The corridor visualization method for age regression",
+            "Doors representing years of life — green/red button technique",
+            "Releasing traumatic memories safely",
             "Ethical considerations in regression therapy"
           ]
         },
         {
-          "id": "adv6",
-          "file": "Gerald Kein - Advanced Hypnosis training - Adv5.avi",
+          "id": "adv5",
+          "file": "Adv5 - Forgiveness Therapy.mp4",
           "title": "Forgiveness Therapy",
           "topics": [
             "The 95% rule — most people are ready to forgive",
@@ -245,8 +235,8 @@
           ]
         },
         {
-          "id": "adv7",
-          "file": "Gerald Kein - Advanced Hypnosis training - Adv6.avi",
+          "id": "adv6",
+          "file": "Adv6 - Past Life Regression.mp4",
           "title": "Past Life Regression",
           "topics": [
             "Case study: patient with unexplained stiff neck",
