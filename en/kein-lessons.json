@@ -1,0 +1,262 @@
+{
+  "course": "Gerald Kein Hypnosis Training",
+  "structure": "beginner + advanced",
+  "total_lessons": 18,
+  "sections": {
+    "beginner": {
+      "title": "Beginner-Intermediate Course",
+      "lesson_count": 12,
+      "lessons": [
+        {
+          "id": "01",
+          "file": "Gerald Kein - Beginner-Intermediate Hypnosis training - 01.avi",
+          "title": "Introduction & History of Hypnosis",
+          "topics": [
+            "Recommended reading list",
+            "Orman McGill and the first hypnosis books",
+            "Elman's 'Hypnotherapy' — the must-read book",
+            "How hypnosis books evolved from 1950s to today",
+            "Steve Parkhill's 'Answer to Cancer'"
+          ]
+        },
+        {
+          "id": "02",
+          "file": "Gerald Kein - Beginner-Intermediate Hypnosis training - 02.avi",
+          "title": "Core Concepts: Rapport, Somnambulism & Suggestibility",
+          "topics": [
+            "Psychosomatics — mind-body connection",
+            "Rapport — building working relationship with client",
+            "Somnambulism — the deep trance level",
+            "Why Kein only works in somnambulism",
+            "Conscious vs subconscious mind",
+            "Waking hypnosis suggestions",
+            "Pre-talk that does half the work before formal induction"
+          ]
+        },
+        {
+          "id": "03",
+          "file": "Gerald Kein - Beginner-Intermediate Hypnosis training - 03.avi",
+          "title": "Bypassing the Critical Factor",
+          "topics": [
+            "What is the critical factor and how to bypass it",
+            "Love as the greatest bypass",
+            "TV advertising & the hypnotic nature of commercials",
+            "Power of the human mind demonstration",
+            "Pretending game — using imagination",
+            "Eye fixation induction demo"
+          ]
+        },
+        {
+          "id": "04",
+          "file": "Gerald Kein - Beginner-Intermediate Hypnosis training - 04.avi",
+          "title": "Trance Levels & The Coma Story",
+          "topics": [
+            "Levels of trance explained",
+            "The famous 'Walter & the girl' coma story",
+            "How to handle someone in a very deep trance",
+            "What to do when a subject won't come out",
+            "Coma state characteristics"
+          ]
+        },
+        {
+          "id": "05",
+          "file": "Gerald Kein - Beginner-Intermediate Hypnosis training - 05.avi",
+          "title": "Chevreul Pendulum & Ideomotor Responses",
+          "topics": [
+            "Pendulum demonstration — forward-back, left-right, circle",
+            "How pendulum proves the subconscious exists",
+            "Using pendulum for induction",
+            "Ideomotor responses and muscle learning",
+            "The paradox: trying to stop makes it go faster",
+            "Transition: pendulum → deep trance"
+          ]
+        },
+        {
+          "id": "06",
+          "file": "Gerald Kein - Beginner-Intermediate Hypnosis training - 06.avi",
+          "title": "Waking Hypnosis & Emotional Triggers",
+          "topics": [
+            "Emotional triggers in hypnosis",
+            "Hitler & Goebbels — mass hypnotism case study",
+            "Sex in advertising and bypassing the critical factor",
+            "Waking hypnosis techniques — practical daily practice",
+            "Eye contact technique for instant waking trance",
+            "Pre-talk integration with waking hypnosis"
+          ]
+        },
+        {
+          "id": "07",
+          "file": "Gerald Kein - Beginner-Intermediate Hypnosis training - 07.avi",
+          "title": "Deepening Techniques",
+          "topics": [
+            "Counting techniques — how to adjust counting to breathing",
+            "Speaking to the subject like a best friend",
+            "Hallucination techniques — staircase, beach, clouds",
+            "Ideomotor suggestions — eye catalepsy, arm levitation",
+            "Pyramid technique — stacking inductions",
+            "Elman induction foundation"
+          ]
+        },
+        {
+          "id": "08",
+          "file": "Gerald Kein - Beginner-Intermediate Hypnosis training - 08.avi",
+          "title": "Elman Induction — Step by Step",
+          "topics": [
+            "Live Elman induction demonstration with student Ben",
+            "Physical relaxation — eye catalepsy test",
+            "Hand drop test — checking for true relaxation",
+            "Reverse counting for mind relaxation",
+            "Overcoming resistance in the induction process",
+            "Complete Elman induction walkthrough"
+          ]
+        },
+        {
+          "id": "09",
+          "file": "Gerald Kein - Beginner-Intermediate Hypnosis training - 09.avi",
+          "title": "Building a Practice: Referrals & Marketing",
+          "topics": [
+            "Referral letters to doctors — exact templates",
+            "How to get medical professionals to send clients",
+            "Patient follow-up correspondence",
+            "Intake forms — what to ask and why",
+            "Overcoming 'I tried hypnosis before and it didn't work'",
+            "Handling the analytical client"
+          ]
+        },
+        {
+          "id": "10",
+          "file": "Gerald Kein - Beginner-Intermediate Hypnosis training - 10.avi",
+          "title": "Self-Hypnosis",
+          "topics": [
+            "Self-hypnosis instructions — 'finger drop' method",
+            "Creating self-hypnosis audio recordings",
+            "Script for self-hypnosis deepening",
+            "How to give suggestions to yourself",
+            "One-minute suggestion technique",
+            "Why not to repeat suggestions mentally"
+          ]
+        },
+        {
+          "id": "11",
+          "file": "Gerald Kein - Beginner-Intermediate Hypnosis training - 11.avi",
+          "title": "Pain Control & Anesthesia",
+          "topics": [
+            "Mayo brothers and Elman's anesthesia technique",
+            "Reducing surgical anesthetic by 25-75% with hypnosis",
+            "How eye catalepsy creates surgical anesthesia",
+            "Caesarean section with hypnosis-only anesthesia",
+            "Post-surgical healing suggestions",
+            "Chronic pain management"
+          ]
+        },
+        {
+          "id": "12",
+          "file": "Gerald Kein - Beginner-Intermediate Hypnosis training - 12.avi",
+          "title": "The Coma State",
+          "topics": [
+            "How to achieve the coma state",
+            "Three tests for coma: anesthesia, catalepsy, fright command",
+            "Working with subjects in coma state",
+            "Ethical boundaries and child abuse reporting",
+            "Transition from coma to somnambulism"
+          ]
+        }
+      ]
+    },
+    "advanced": {
+      "title": "Advanced Hypnosis Training",
+      "lesson_count": 6,
+      "lessons": [
+        {
+          "id": "adv1",
+          "file": "Gerald Kein - Advanced Hypnosis training - Adv1.avi",
+          "title": "Rapid & Instant Inductions",
+          "topics": [
+            "The hypnotist's toolkit — many inductions, not one",
+            "Why you need fast and instant inductions",
+            "Overcoming the fear of instant induction",
+            "Choosing the right induction for personality type",
+            "The vacation effect — getting back into practice",
+            "Instant induction for analytical clients"
+          ]
+        },
+        {
+          "id": "adv2",
+          "file": "Gerald Kein - Advanced Hypnosis training - Adv2.avi",
+          "title": "Universal Therapy & Case Study: Jane",
+          "topics": [
+            "What Universal Therapy is and how it evolved",
+            "Conditions it treats: fears, depression, anxiety, anger, guilt",
+            "Self-esteem, self-criticism, envy, stress relief",
+            "Case study: Jane — compulsive hair-pulling (trichotillomania)",
+            "Childhood sexual abuse and its effects",
+            "Directive suggestion technique"
+          ]
+        },
+        {
+          "id": "adv3",
+          "file": "Gerald Kein - Advanced Hypnosis training - Adv3.avi",
+          "title": "Emotional Release & Regression",
+          "topics": [
+            "Deathbed therapy — unresolved grief",
+            "Hidden anger and recognizing emotional triggers",
+            "Case study: Bill — the 'tough guy' facade",
+            "How anger covers fear",
+            "Using regression when the moment presents itself",
+            "Recognizing trauma during consultation"
+          ]
+        },
+        {
+          "id": "adv4",
+          "file": "Gerald Kein - Advanced Hypnosis training - Adv4-0.avi",
+          "title": "Marketing Your Hypnosis Practice",
+          "topics": [
+            "Setting up your office and business",
+            "Brochures, business cards, and professional materials",
+            "The 5-mile walk — street marketing technique",
+            "Working 20-40 hours per week sustainably",
+            "Getting referrals from doctors and other professionals",
+            "Building client base from zero"
+          ]
+        },
+        {
+          "id": "adv5",
+          "file": "Gerald Kein - Advanced Hypnosis training - Adv4-1.avi",
+          "title": "Age Regression — The Corridor Technique",
+          "topics": [
+            "The corridor visualization method",
+            "Doors representing years of life",
+            "Green/red button technique",
+            "Releasing traumatic memories",
+            "Working with early childhood events",
+            "Ethical considerations in regression therapy"
+          ]
+        },
+        {
+          "id": "adv6",
+          "file": "Gerald Kein - Advanced Hypnosis training - Adv5.avi",
+          "title": "Forgiveness Therapy",
+          "topics": [
+            "The 95% rule — most people are ready to forgive",
+            "Case study: George — alcoholic from orphanage abuse",
+            "Why forgiveness is essential for healing",
+            "When people can't forgive (Holocaust survivors example)",
+            "The forgiveness protocol step by step"
+          ]
+        },
+        {
+          "id": "adv7",
+          "file": "Gerald Kein - Advanced Hypnosis training - Adv6.avi",
+          "title": "Past Life Regression",
+          "topics": [
+            "Case study: patient with unexplained stiff neck",
+            "Irish horse thief past life — execution memory",
+            "Sicilian life and entering the body",
+            "How physical symptoms can carry across lives",
+            "Working with reincarnation therapy"
+          ]
+        }
+      ]
+    }
+  }
+}
