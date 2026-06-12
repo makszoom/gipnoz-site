@@ -607,11 +607,49 @@ footer a:hover { color: var(--accent); }
 .lesson-nav {
   display: flex;
   justify-content: space-between;
-  gap: 12px;
-  margin-top: 32px;
+  gap: 16px;
+  margin-top: 40px;
   flex-wrap: wrap;
 }
-.lesson-nav a { flex: 1; text-align: center; min-width: 120px; }
+.lesson-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 22px;
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+  font-size: .9rem;
+  font-weight: 500;
+  transition: all .2s;
+  flex: 1;
+  min-width: 140px;
+}
+.lesson-nav-link:hover {
+  border-color: var(--accent);
+  background: var(--bg-hover);
+  color: var(--accent);
+}
+.lesson-nav-link.prev { justify-content: flex-start; }
+.lesson-nav-link.next { justify-content: flex-end; text-align: right; }
+.lesson-nav-link .nav-arrow {
+  font-size: 1.1rem;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+.lesson-nav-link .nav-label {
+  font-size: .75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+.lesson-nav-link .nav-title {
+  font-size: .9rem;
+  font-weight: 600;
+}
+.lesson-nav-spacer { flex: 1; min-width: 0; }
 
 /* ===== SCRIPT BLOCK INSIDE LESSON ===== */
 .script-block {
