@@ -26,8 +26,11 @@
       <a href="../about.html">About</a>
       <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">🌙</button>
     </nav>
+    <button class="burger-btn" onclick="toggleMenu()" aria-label="Меню"><span></span><span></span><span></span></button>
   </div>
 </header>
+
+<div class="nav-overlay" onclick="toggleMenu()"></div>
 
 <main>
   <a href="../scripts.html" style="color:var(--text-muted);font-size:.85rem;display:block;margin-bottom:16px;">← Script Library</a>
@@ -81,6 +84,8 @@
 </footer>
 
 <script>
+
+function toggleMenu(){var n=document.querySelector('nav');var b=document.querySelector('.burger-btn');var o=document.querySelector('.nav-overlay');n.classList.toggle('open');b.classList.toggle('open');o.classList.toggle('open')}
 function toggleTheme(){var h=document.documentElement;if(h.getAttribute("data-theme")==="light"){h.removeAttribute("data-theme");localStorage.setItem("theme","dark");document.querySelector(".theme-toggle").textContent="🌙"}else{h.setAttribute("data-theme","light");localStorage.setItem("theme","light");document.querySelector(".theme-toggle").textContent="☀️"}}
 (function(){var b=document.querySelector(".theme-toggle");if(b&&document.documentElement.getAttribute("data-theme")==="light")b.textContent="☀️"})();
 </script>
