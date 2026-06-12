@@ -80,7 +80,6 @@ a:hover { color: var(--accent-hover); }
 header {
   position: sticky;
   top: 0;
-  z-index: 100;
   background: var(--header-bg);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -132,7 +131,6 @@ nav a.active { color: var(--accent); }
   cursor: pointer;
   padding: 6px;
   color: var(--text);
-  z-index: 1002;
 }
 .burger-btn span {
   display: block;
@@ -152,7 +150,6 @@ nav a.active { color: var(--accent); }
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
   background: rgba(0,0,0,.65);
-  z-index: 1000;
   touch-action: none;
 }
 .nav-overlay.open { display: block; }
@@ -178,7 +175,6 @@ body.menu-open { overflow: hidden; }
     flex-direction: column;
     align-items: stretch;
     padding: 72px 20px 24px;
-    z-index: 1001;
     transform: translateX(100%);
     transition: transform .3s ease;
     -webkit-transform: translateX(100%);
@@ -192,7 +188,7 @@ body.menu-open { overflow: hidden; }
     padding: 16px 0;
     font-size: 1rem;
     border-bottom: 1px solid #222;
-    color: #ccc;
+    color: #eee;
   }
   nav a:hover { color: #fff; }
   nav a:last-child { border-bottom: none; }
