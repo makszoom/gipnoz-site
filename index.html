@@ -3,6 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function(){
+      var lang = navigator.language || navigator.userLanguage;
+      var saved = localStorage.getItem('preferred_lang');
+      if(saved === 'en' || (!saved && lang && /^en/i.test(lang))){
+        if(!window.location.pathname.startsWith('/gipnoz-site/en/')){
+          window.location.href = 'https://makszoom.github.io/gipnoz-site/en/';
+        }
+      }
+    })();
+  </script>
   <title>Гипноз с нуля — онлайн-курс гипноза</title>
   <meta name="description" content="Научитесь гипнозу с нуля. Полный курс по методике Джерри Кайн: от базовых техник до мгновенных индукций. Тексты уроков и скрипты бесплатно, видео по подписке.">
   <link rel="alternate" hreflang="ru" href="https://makszoom.github.io/gipnoz-site/index.html">
