@@ -566,3 +566,34 @@ footer a:hover { color: var(--accent); }
   border-color: var(--accent);
   color: var(--accent);
 }
+
+/* ===== BREADCRUMB ===== */
+.breadcrumb {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  font-size: .85rem;
+  align-items: center;
+}
+.breadcrumb a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-muted);
+  padding: 5px 14px;
+  border-radius: 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  transition: all .2s;
+  text-decoration: none;
+}
+.breadcrumb a:hover {
+  color: var(--text);
+  border-color: var(--accent);
+  background: var(--bg-hover);
+}
+.breadcrumb-sep {
+  color: var(--border);
+  user-select: none;
+}
