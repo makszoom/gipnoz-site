@@ -944,9 +944,24 @@ footer a:hover { color: var(--accent); }
   .section-title { font-size: 1.15rem; margin-bottom: 16px; }
 
   /* Mobile cards */
-  .card { padding: 16px 20px; }
+  .card {
+    padding: 16px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.35);
+  }
   .card h3 { font-size: 1rem; }
 
   /* Mobile buttons */
   .btn { padding: 14px 24px; font-size: 1rem; }
+
+  /* Mobile video CTA */
+  .video-cta-card { padding: 40px 20px; }
+  .video-cta-card h3 { font-size: 1.15rem; }
+
+  /* Mobile pricing */
+  .pricing-grid { grid-template-columns: 1fr; gap: 16px; }
+  .pricing-card { padding: 24px 20px; }
+
+  /* Mobile lesson nav */
+  .lesson-nav { flex-direction: column; }
+  .lesson-nav-card { width: 100%; }
 }
