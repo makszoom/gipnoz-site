@@ -159,8 +159,15 @@ nav a.active { color: var(--accent); }
 
 body.menu-open { overflow: hidden; }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .burger-btn { display: block; }
+  header {
+    background: #111;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-bottom: 1px solid #333;
+  }
+  .header-inner { overflow: hidden; }
   nav {
     position: fixed;
     top: 0; right: 0; bottom: 0;
@@ -912,7 +919,7 @@ footer a:hover { color: var(--accent); }
 .module-card.m-advanced .module-card-accent { background: #6d28d9; }
 .module-card.m-advanced .module-card-num { background: #6d28d9; }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   html { font-size: 14px; }
   .header-inner { padding: 0 16px; }
 
