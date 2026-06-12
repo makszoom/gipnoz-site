@@ -45,7 +45,15 @@
 
 <div class="nav-overlay" onclick="toggleMenu()"></div>
 
-<main>
+<div class="lesson-layout">
+
+  <!-- Mobile sidebar toggle -->
+  <button class="sidebar-toggle" onclick="toggleSidebar()">Модуль 0 — Введение · Загрузка...</button>
+  <div class="sidebar-mobile-panel"></div>
+
+  <aside class="lesson-sidebar"></aside>
+
+  <main>
   <!-- Навигация по модулю -->
   <div class="breadcrumb">
     <a href="../../modules.html">← Все модули</a>
@@ -110,6 +118,8 @@
   </div>
 </main>
 
+</div>
+
 <footer>
   <p>🧠 Гипноз с нуля — проект для обучения гипнотическим техникам.</p>
   <p style="margin-top:6px;">По методике Джерри Кайн (Kayfabe) — быстрые и мгновенные техники гипноза</p>
@@ -122,5 +132,7 @@ function toggleMenu(){var n=document.querySelector('nav');var b=document.querySe
 function toggleTheme(){var h=document.documentElement;if(h.getAttribute("data-theme")==="light"){h.removeAttribute("data-theme");localStorage.setItem("theme","dark");document.querySelector(".theme-toggle").textContent="🌙"}else{h.setAttribute("data-theme","light");localStorage.setItem("theme","light");document.querySelector(".theme-toggle").textContent="☀️"}}
 (function(){var b=document.querySelector(".theme-toggle");if(b&&document.documentElement.getAttribute("data-theme")==="light")b.textContent="☀️"})();
 </script>
+<script src="../../js/lesson-sidebar.js"></script>
+
 </body>
 </html>
