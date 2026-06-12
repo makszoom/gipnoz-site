@@ -132,7 +132,7 @@ nav a.active { color: var(--accent); }
   cursor: pointer;
   padding: 6px;
   color: var(--text);
-  z-index: 200;
+  z-index: 1002;
 }
 .burger-btn span {
   display: block;
@@ -150,11 +150,16 @@ nav a.active { color: var(--accent); }
 .nav-overlay {
   display: none;
   position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,.5);
-  z-index: 150;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,.55);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 1000;
+  touch-action: none;
 }
 .nav-overlay.open { display: block; }
+
+body.menu-open { overflow: hidden; }
 
 @media (max-width: 600px) {
   .burger-btn { display: block; }
@@ -167,11 +172,15 @@ nav a.active { color: var(--accent); }
     flex-direction: column;
     align-items: stretch;
     padding: 80px 24px 24px;
-    z-index: 160;
+    z-index: 1001;
     transform: translateX(100%);
     transition: transform .3s ease;
+    -webkit-transform: translateX(100%);
   }
-  nav.open { transform: translateX(0); }
+  nav.open {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+  }
   nav a {
     margin: 0;
     padding: 14px 0;
