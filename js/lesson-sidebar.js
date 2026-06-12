@@ -84,9 +84,7 @@
     var cls = 'lesson-sidebar-item';
     if(j === currentIndex) cls += ' current';
     else if(j < currentIndex) cls += ' completed';
-    var num = mod.lessons[j][0].replace(/[^\d]/g,'').replace(/^(\d)(\d)$/,'$1.$2');
     html += '<li class="'+cls+'"><a href="'+mod.lessons[j][0]+'">'+
-      '<span class="lesson-sidebar-num">'+num+'</span>'+
       '<span class="lesson-sidebar-title">'+mod.lessons[j][1]+'</span>'+
       '</a></li>';
   }
