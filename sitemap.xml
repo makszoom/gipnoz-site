@@ -2,667 +2,734 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://makszoom.github.io/gipnoz-site/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/en/</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://makszoom.github.io/gipnoz-site/modules.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/scripts.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/about.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/donate.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/index.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://makszoom.github.io/gipnoz-site/en/modules.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://makszoom.github.io/gipnoz-site/en/scripts.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/about.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://makszoom.github.io/gipnoz-site/en/about.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/donate.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/en/donate.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-0/lesson-0-1.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/donate.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-0/lesson-0-2.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-0/lesson-0-3.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-0/lesson-0-4.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-1/lesson-1-1.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-1/lesson-1-2.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-1/lesson-1-3.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-1/lesson-1-4.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-1/lesson-1-5.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-1/lesson-1-6.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-2/lesson-2-1.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-2/lesson-2-2.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-2/lesson-2-3.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-2/lesson-2-4.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-2/lesson-2-5.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-3/lesson-3-1.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-3/lesson-3-2.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-3/lesson-3-3.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-3/lesson-3-4.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-3/lesson-3-5.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-3/lesson-3-6.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-4/lesson-4-1.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-4/lesson-4-2.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-4/lesson-4-3.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-4/lesson-4-4.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-4/lesson-4-5.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-4/lesson-4-6.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-5/lesson-5-1.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-5/lesson-5-2.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-5/lesson-5-3.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-5/lesson-5-4.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-5/lesson-5-5.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-6/lesson-6-1.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-6/lesson-6-2.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-6/lesson-6-3.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-6/lesson-6-4.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/modules/module-6/lesson-6-5.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/en/advanced/lesson-adv1.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/en/advanced/lesson-adv2.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/en/advanced/lesson-adv3.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/en/advanced/lesson-adv4.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/en/advanced/lesson-adv5.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/en/advanced/lesson-adv6.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/en/beginner/lesson-01.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/en/beginner/lesson-02.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/en/beginner/lesson-03.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/en/beginner/lesson-04.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/en/beginner/lesson-05.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/en/beginner/lesson-06.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/en/beginner/lesson-07.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/en/beginner/lesson-08.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/en/beginner/lesson-09.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/en/beginner/lesson-10.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/en/beginner/lesson-11.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/en/beginner/lesson-12.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-1-elman.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-1-elman.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-1.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-2.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-3.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-4.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-5.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-6.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-7.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-8.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-9.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-10.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-11.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-12.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-13.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-14.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-15.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-16.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-17.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-18.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-19.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-20.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-21.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-22.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-23.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-24.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-25.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-26.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-27.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-28.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-29.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-30.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-31.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-32.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-33.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/img/spike-graph.svg</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-0.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-1.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-2.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-3.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-4.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-5.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-6.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-0.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-1.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-2.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-3.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-4.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-5.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-6.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-0/lesson-0-1.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-0/lesson-0-2.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-0/lesson-0-3.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-0/lesson-0-4.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-0/lesson-0-1.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-0/lesson-0-2.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-0/lesson-0-3.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-0/lesson-0-4.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-1/lesson-1-1.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-1/lesson-1-2.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-1/lesson-1-3.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-1/lesson-1-4.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-1/lesson-1-5.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-1/lesson-1-6.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-1/lesson-1-1.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-1/lesson-1-2.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-1/lesson-1-3.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-1/lesson-1-4.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-1/lesson-1-5.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-1.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-1/lesson-1-6.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-10.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-2/lesson-2-1.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-11.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-2/lesson-2-2.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-12.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-2/lesson-2-3.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-13.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-2/lesson-2-4.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-14.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-2/lesson-2-5.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-15.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-2/lesson-2-1.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-16.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-2/lesson-2-2.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-17.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-2/lesson-2-3.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-18.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-2/lesson-2-4.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-19.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-2/lesson-2-5.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-2.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-3/lesson-3-1.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-20.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-3/lesson-3-2.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-21.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-3/lesson-3-3.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-22.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-3/lesson-3-4.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-23.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-3/lesson-3-5.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-24.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-3/lesson-3-6.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-25.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-3/lesson-3-1.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-26.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-3/lesson-3-2.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-27.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-3/lesson-3-3.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-28.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-3/lesson-3-4.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-29.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-3/lesson-3-5.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-3.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-3/lesson-3-6.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-30.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-4/lesson-4-1.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-31.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-4/lesson-4-2.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-32.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-4/lesson-4-3.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-33.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-4/lesson-4-4.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-4.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-4/lesson-4-5.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-5.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-4/lesson-4-6.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-6.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-4/lesson-4-1.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-7.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-4/lesson-4-2.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-8.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-4/lesson-4-3.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/scripts/script-9.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-4/lesson-4-4.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-age-regression.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-4/lesson-4-5.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-anesthesia.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-4/lesson-4-6.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-arm-pull.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-5/lesson-5-1.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-child-induction.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-5/lesson-5-2.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-coma-state.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-5/lesson-5-3.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-counting-deepen.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-5/lesson-5-4.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-elman.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-5/lesson-5-5.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-emotional-release.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-5/lesson-5-1.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-eye-fixation.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-5/lesson-5-2.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-forgiveness.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-5/lesson-5-3.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-hand-clasp.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-5/lesson-5-4.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-handshake.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-5/lesson-5-5.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-head-spin.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-6/lesson-6-1.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-pain-control.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-6/lesson-6-2.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-past-life.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-6/lesson-6-3.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-pendulum.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-6/lesson-6-4.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-pre-talk.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/modules/module-6/lesson-6-5.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-pretending-game.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-6/lesson-6-1.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-self-hypnosis.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-6/lesson-6-2.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-shock-induction.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-6/lesson-6-3.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-staircase.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-6/lesson-6-4.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-universal-therapy.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://makszoom.github.io/gipnoz-site/en/modules/module-6/lesson-6-5.html</loc>
+    <loc>https://makszoom.github.io/gipnoz-site/en/scripts/script-waking-hypnosis.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
 </urlset>
