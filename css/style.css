@@ -432,6 +432,118 @@ footer a:hover { color: var(--accent); }
   margin-top: 16px;
 }
 
+/* ===== PRICING CARDS ===== */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+@media (max-width: 600px) {
+  .pricing-grid { grid-template-columns: 1fr; max-width: 400px; }
+}
+.pricing-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 36px 28px;
+  text-align: center;
+  transition: border-color .2s, transform .2s;
+  position: relative;
+}
+.pricing-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+.pricing-card.featured {
+  border-color: var(--accent);
+  border-width: 2px;
+  box-shadow: 0 0 32px rgba(124, 58, 237, 0.08);
+}
+.pricing-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent);
+  color: #fff;
+  font-size: .75rem;
+  font-weight: 700;
+  padding: 4px 16px;
+  border-radius: 20px;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+}
+.pricing-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--accent-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  font-size: 1.3rem;
+}
+.pricing-name {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.pricing-price {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--accent);
+  margin: 16px 0 2px;
+  line-height: 1;
+}
+.pricing-period {
+  color: var(--text-muted);
+  font-size: .85rem;
+  margin-bottom: 24px;
+}
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+  text-align: left;
+  display: inline-block;
+}
+.pricing-features li {
+  padding: 6px 0;
+  font-size: .9rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.pricing-features li::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+.pricing-cta {
+  display: block;
+  width: 100%;
+  padding: 14px 0;
+  font-size: .95rem;
+}
+.pricing-note {
+  color: var(--text-muted);
+  font-size: .75rem;
+  margin-top: 10px;
+}
+.pricing-footer {
+  color: var(--text-muted);
+  font-size: .85rem;
+  text-align: center;
+  margin-top: 24px;
+}
+
 /* ===== LESSON PAGE ===== */
 .lesson-video {
   display: flex;
