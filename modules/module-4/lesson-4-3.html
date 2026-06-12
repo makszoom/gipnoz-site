@@ -44,6 +44,40 @@
 
 <div class="nav-overlay" onclick="toggleMenu()"></div>
 
+<div class="lesson-layout">
+
+  <!-- Mobile sidebar toggle -->
+  <button class="sidebar-toggle" onclick="toggleSidebar()">Модуль 4 — Феномены · 3 из 6</button>
+  <div class="sidebar-mobile-panel">
+<div class="module-progress">
+  <div class="module-progress-bar"><div class="module-progress-fill" style="width:50%"></div></div>
+  <div class="module-progress-text">Урок 3 из 6 · 50%</div>
+</div>
+<ul class="lesson-sidebar-list">
+  <li class="lesson-sidebar-item completed"><a href="lesson-4-1.html"><span class="lesson-sidebar-title">4.1 — Что такое феномены и зачем они нужны</span></a></li>
+  <li class="lesson-sidebar-item completed"><a href="lesson-4-2.html"><span class="lesson-sidebar-title">4.2 — Каталепсия и анальгезия</span></a></li>
+  <li class="lesson-sidebar-item current"><a href="lesson-4-3.html"><span class="lesson-sidebar-title">4.3 — Амнезия: виды и техники</span></a></li>
+  <li class="lesson-sidebar-item"><a href="lesson-4-4.html"><span class="lesson-sidebar-title">4.4 — Постгипнотические внушения и реиндукция</span></a></li>
+  <li class="lesson-sidebar-item"><a href="lesson-4-5.html"><span class="lesson-sidebar-title">4.5 — Галлюцинации с открытыми и закрытыми глазами</span></a></li>
+  <li class="lesson-sidebar-item"><a href="lesson-4-6.html"><span class="lesson-sidebar-title">4.6 — Введение в регрессию</span></a></li>
+</ul>
+  </div>
+
+  <aside class="lesson-sidebar">
+<div class="module-progress">
+  <div class="module-progress-bar"><div class="module-progress-fill" style="width:50%"></div></div>
+  <div class="module-progress-text">Урок 3 из 6 · 50%</div>
+</div>
+<ul class="lesson-sidebar-list">
+  <li class="lesson-sidebar-item completed"><a href="lesson-4-1.html"><span class="lesson-sidebar-title">4.1 — Что такое феномены и зачем они нужны</span></a></li>
+  <li class="lesson-sidebar-item completed"><a href="lesson-4-2.html"><span class="lesson-sidebar-title">4.2 — Каталепсия и анальгезия</span></a></li>
+  <li class="lesson-sidebar-item current"><a href="lesson-4-3.html"><span class="lesson-sidebar-title">4.3 — Амнезия: виды и техники</span></a></li>
+  <li class="lesson-sidebar-item"><a href="lesson-4-4.html"><span class="lesson-sidebar-title">4.4 — Постгипнотические внушения и реиндукция</span></a></li>
+  <li class="lesson-sidebar-item"><a href="lesson-4-5.html"><span class="lesson-sidebar-title">4.5 — Галлюцинации с открытыми и закрытыми глазами</span></a></li>
+  <li class="lesson-sidebar-item"><a href="lesson-4-6.html"><span class="lesson-sidebar-title">4.6 — Введение в регрессию</span></a></li>
+</ul>
+  </aside>
+
 <main>
   <div class="breadcrumb">
     <a href="../../modules.html">← Все модули</a>
@@ -117,6 +151,7 @@
     <a href="lesson-4-4.html" class="btn">Следующий урок →</a>
   </div>
 </main>
+</div>
 
 <footer>
   <p>🧠 Гипноз с нуля — проект для обучения гипнотическим техникам.</p>
@@ -127,6 +162,7 @@
 <script>
 
 function toggleMenu(){var n=document.querySelector('nav');var b=document.querySelector('.burger-btn');var o=document.querySelector('.nav-overlay');n.classList.toggle('open');b.classList.toggle('open');o.classList.toggle('open');document.body.classList.toggle('menu-open')}
+function toggleSidebar(){var btn=document.querySelector(".sidebar-toggle");var panel=document.querySelector(".sidebar-mobile-panel");if(!btn||!panel)return;btn.classList.toggle("open");panel.classList.toggle("open");}
 function toggleTheme(){var h=document.documentElement;if(h.getAttribute("data-theme")==="light"){h.removeAttribute("data-theme");localStorage.setItem("theme","dark");document.querySelector(".theme-toggle").textContent="🌙"}else{h.setAttribute("data-theme","light");localStorage.setItem("theme","light");document.querySelector(".theme-toggle").textContent="☀️"}}
 (function(){var b=document.querySelector(".theme-toggle");if(b&&document.documentElement.getAttribute("data-theme")==="light")b.textContent="☀️"})();
 </script>

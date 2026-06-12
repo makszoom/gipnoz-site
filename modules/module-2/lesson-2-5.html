@@ -45,6 +45,38 @@
 
 <div class="nav-overlay" onclick="toggleMenu()"></div>
 
+<div class="lesson-layout">
+
+  <!-- Mobile sidebar toggle -->
+  <button class="sidebar-toggle" onclick="toggleSidebar()">Модуль 2 — Стабилизация · 5 из 5</button>
+  <div class="sidebar-mobile-panel">
+<div class="module-progress">
+  <div class="module-progress-bar"><div class="module-progress-fill" style="width:100%"></div></div>
+  <div class="module-progress-text">Урок 5 из 5 · 100%</div>
+</div>
+<ul class="lesson-sidebar-list">
+  <li class="lesson-sidebar-item completed"><a href="lesson-2-1.html"><span class="lesson-sidebar-title">2.1 — Стабилизация сомнамбулизма</span></a></li>
+  <li class="lesson-sidebar-item completed"><a href="lesson-2-2.html"><span class="lesson-sidebar-title">2.2 — Скрытый тест фракцинацией</span></a></li>
+  <li class="lesson-sidebar-item completed"><a href="lesson-2-3.html"><span class="lesson-sidebar-title">2.3 — Работа с сопротивлением</span></a></li>
+  <li class="lesson-sidebar-item completed"><a href="lesson-2-4.html"><span class="lesson-sidebar-title">2.4 — Прямые внушения: базовый протокол</span></a></li>
+  <li class="lesson-sidebar-item current"><a href="lesson-2-5.html"><span class="lesson-sidebar-title">2.5 — Пост-гипнотическое окно</span></a></li>
+</ul>
+  </div>
+
+  <aside class="lesson-sidebar">
+<div class="module-progress">
+  <div class="module-progress-bar"><div class="module-progress-fill" style="width:100%"></div></div>
+  <div class="module-progress-text">Урок 5 из 5 · 100%</div>
+</div>
+<ul class="lesson-sidebar-list">
+  <li class="lesson-sidebar-item completed"><a href="lesson-2-1.html"><span class="lesson-sidebar-title">2.1 — Стабилизация сомнамбулизма</span></a></li>
+  <li class="lesson-sidebar-item completed"><a href="lesson-2-2.html"><span class="lesson-sidebar-title">2.2 — Скрытый тест фракцинацией</span></a></li>
+  <li class="lesson-sidebar-item completed"><a href="lesson-2-3.html"><span class="lesson-sidebar-title">2.3 — Работа с сопротивлением</span></a></li>
+  <li class="lesson-sidebar-item completed"><a href="lesson-2-4.html"><span class="lesson-sidebar-title">2.4 — Прямые внушения: базовый протокол</span></a></li>
+  <li class="lesson-sidebar-item current"><a href="lesson-2-5.html"><span class="lesson-sidebar-title">2.5 — Пост-гипнотическое окно</span></a></li>
+</ul>
+  </aside>
+
 <main>
   <div class="breadcrumb">
     <a href="../../modules.html">← Все модули</a>
@@ -198,6 +230,7 @@
     </a>
   </div>
 </main>
+</div>
 
 <footer>
   <p>🧠 Гипноз с нуля — проект для обучения гипнотическим техникам.</p>
@@ -208,6 +241,7 @@
 <script>
 
 function toggleMenu(){var n=document.querySelector('nav');var b=document.querySelector('.burger-btn');var o=document.querySelector('.nav-overlay');n.classList.toggle('open');b.classList.toggle('open');o.classList.toggle('open');document.body.classList.toggle('menu-open')}
+function toggleSidebar(){var btn=document.querySelector(".sidebar-toggle");var panel=document.querySelector(".sidebar-mobile-panel");if(!btn||!panel)return;btn.classList.toggle("open");panel.classList.toggle("open");}
 function toggleTheme(){var h=document.documentElement;if(h.getAttribute("data-theme")==="light"){h.removeAttribute("data-theme");localStorage.setItem("theme","dark");document.querySelector(".theme-toggle").textContent="🌙"}else{h.setAttribute("data-theme","light");localStorage.setItem("theme","light");document.querySelector(".theme-toggle").textContent="☀️"}}
 (function(){var b=document.querySelector(".theme-toggle");if(b&&document.documentElement.getAttribute("data-theme")==="light")b.textContent="☀️"})();
 </script>

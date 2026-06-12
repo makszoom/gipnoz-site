@@ -39,6 +39,52 @@
 
 <div class="nav-overlay" onclick="toggleMenu()"></div>
 
+<div class="lesson-layout">
+
+  <!-- Mobile sidebar toggle -->
+  <button class="sidebar-toggle" onclick="toggleSidebar()">Beginner-Intermediate Course · 4 of 12</button>
+  <div class="sidebar-mobile-panel">
+<div class="module-progress">
+  <div class="module-progress-bar"><div class="module-progress-fill" style="width:33%"></div></div>
+  <div class="module-progress-text">Lesson 4 of 12 · 33%</div>
+</div>
+<ul class="lesson-sidebar-list">
+  <li class="lesson-sidebar-item completed"><a href="lesson-01.html"><span class="lesson-sidebar-title">B01 — Introduction &amp; History of Hypnosis</span></a></li>
+  <li class="lesson-sidebar-item completed"><a href="lesson-02.html"><span class="lesson-sidebar-title">B02 — Core Concepts: Rapport, Somnambulism &amp; Suggestibility</span></a></li>
+  <li class="lesson-sidebar-item completed"><a href="lesson-03.html"><span class="lesson-sidebar-title">B03 — Bypassing the Critical Factor &amp; Emergency Anesthesia</span></a></li>
+  <li class="lesson-sidebar-item current"><a href="lesson-04.html"><span class="lesson-sidebar-title">B04 — Trance Levels &amp; Coma State Management</span></a></li>
+  <li class="lesson-sidebar-item"><a href="lesson-05.html"><span class="lesson-sidebar-title">B05 — Chevreul Pendulum &amp; Ideomotor Responses</span></a></li>
+  <li class="lesson-sidebar-item"><a href="lesson-06.html"><span class="lesson-sidebar-title">B06 — Waking Hypnosis &amp; Emotional Triggers</span></a></li>
+  <li class="lesson-sidebar-item"><a href="lesson-07.html"><span class="lesson-sidebar-title">B07 — Deepening: Counting, Hallucinations &amp; Post-Induction</span></a></li>
+  <li class="lesson-sidebar-item"><a href="lesson-08.html"><span class="lesson-sidebar-title">B08 — Elman Induction: Live Demo &amp; Step-by-Step</span></a></li>
+  <li class="lesson-sidebar-item"><a href="lesson-09.html"><span class="lesson-sidebar-title">B09 — Building a Practice: Referrals &amp; Marketing</span></a></li>
+  <li class="lesson-sidebar-item"><a href="lesson-10.html"><span class="lesson-sidebar-title">B10 — Self-Hypnosis</span></a></li>
+  <li class="lesson-sidebar-item"><a href="lesson-11.html"><span class="lesson-sidebar-title">B11 — Pain Control &amp; Anesthesia</span></a></li>
+  <li class="lesson-sidebar-item"><a href="lesson-12.html"><span class="lesson-sidebar-title">B12 — Working with Children &amp; The Coma State</span></a></li>
+</ul>
+  </div>
+
+  <aside class="lesson-sidebar">
+<div class="module-progress">
+  <div class="module-progress-bar"><div class="module-progress-fill" style="width:33%"></div></div>
+  <div class="module-progress-text">Lesson 4 of 12 · 33%</div>
+</div>
+<ul class="lesson-sidebar-list">
+  <li class="lesson-sidebar-item completed"><a href="lesson-01.html"><span class="lesson-sidebar-title">B01 — Introduction &amp; History of Hypnosis</span></a></li>
+  <li class="lesson-sidebar-item completed"><a href="lesson-02.html"><span class="lesson-sidebar-title">B02 — Core Concepts: Rapport, Somnambulism &amp; Suggestibility</span></a></li>
+  <li class="lesson-sidebar-item completed"><a href="lesson-03.html"><span class="lesson-sidebar-title">B03 — Bypassing the Critical Factor &amp; Emergency Anesthesia</span></a></li>
+  <li class="lesson-sidebar-item current"><a href="lesson-04.html"><span class="lesson-sidebar-title">B04 — Trance Levels &amp; Coma State Management</span></a></li>
+  <li class="lesson-sidebar-item"><a href="lesson-05.html"><span class="lesson-sidebar-title">B05 — Chevreul Pendulum &amp; Ideomotor Responses</span></a></li>
+  <li class="lesson-sidebar-item"><a href="lesson-06.html"><span class="lesson-sidebar-title">B06 — Waking Hypnosis &amp; Emotional Triggers</span></a></li>
+  <li class="lesson-sidebar-item"><a href="lesson-07.html"><span class="lesson-sidebar-title">B07 — Deepening: Counting, Hallucinations &amp; Post-Induction</span></a></li>
+  <li class="lesson-sidebar-item"><a href="lesson-08.html"><span class="lesson-sidebar-title">B08 — Elman Induction: Live Demo &amp; Step-by-Step</span></a></li>
+  <li class="lesson-sidebar-item"><a href="lesson-09.html"><span class="lesson-sidebar-title">B09 — Building a Practice: Referrals &amp; Marketing</span></a></li>
+  <li class="lesson-sidebar-item"><a href="lesson-10.html"><span class="lesson-sidebar-title">B10 — Self-Hypnosis</span></a></li>
+  <li class="lesson-sidebar-item"><a href="lesson-11.html"><span class="lesson-sidebar-title">B11 — Pain Control &amp; Anesthesia</span></a></li>
+  <li class="lesson-sidebar-item"><a href="lesson-12.html"><span class="lesson-sidebar-title">B12 — Working with Children &amp; The Coma State</span></a></li>
+</ul>
+  </aside>
+
 <main>
   <div class="breadcrumb">
     <a href="../modules.html">&larr; All lessons</a>
@@ -136,6 +182,7 @@
     </a>
   </div>
 </main>
+</div>
 
 <footer>
   <p>🧠 Hypnosis from Scratch — an educational hypnosis project.</p>
@@ -146,6 +193,7 @@
 <script>
 
 function toggleMenu(){var n=document.querySelector('nav');var b=document.querySelector('.burger-btn');var o=document.querySelector('.nav-overlay');n.classList.toggle('open');b.classList.toggle('open');o.classList.toggle('open');document.body.classList.toggle('menu-open')}
+function toggleSidebar(){var btn=document.querySelector(".sidebar-toggle");var panel=document.querySelector(".sidebar-mobile-panel");if(!btn||!panel)return;btn.classList.toggle("open");panel.classList.toggle("open");}
 function toggleTheme(){var h=document.documentElement;if(h.getAttribute("data-theme")==="light"){h.removeAttribute("data-theme");localStorage.setItem("theme","dark");document.querySelector(".theme-toggle").textContent="🌙"}else{h.setAttribute("data-theme","light");localStorage.setItem("theme","light");document.querySelector(".theme-toggle").textContent="🌞"}}
 (function(){var b=document.querySelector(".theme-toggle");if(b&&document.documentElement.getAttribute("data-theme")==="light")b.textContent="🌞"})();
 </script>
