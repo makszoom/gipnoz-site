@@ -207,11 +207,125 @@
     <p style="margin-bottom:12px;">Чтобы понять, как работают четыре принципа вместе, представьте себе график. По горизонтальной оси — <strong>время</strong>. По вертикальной — <strong>уровень активности нервной системы</strong>.</p>
 
     <div style="margin-bottom:16px;">
-      <a href="../../img/spike-graph.svg" target="_blank" rel="noopener" title="Открыть график в полном размере">
-        <img src="../../img/spike-graph.svg" alt="График спайка: кривая активности нервной системы" style="width:100%;max-width:720px;display:block;margin:0 auto;border-radius:var(--radius-sm);cursor:zoom-in;">
-      </a>
-      <p style="text-align:center;font-size:.8rem;color:var(--text-muted);margin-top:6px;">🖱 Нажмите для увеличения</p>
-    </div>
+          <a href="../../img/spike-graph.svg" target="_blank" rel="noopener" title="Открыть график в полном размере" style="display:block;">
+    <svg width="100%" viewBox="0 0 720 540" xmlns="http://www.w3.org/2000/svg" style="display:block;max-width:720px;margin:0 auto;border-radius:var(--radius-sm);cursor:zoom-in;">
+    <style>
+      .sp-bg { fill: var(--bg-card); }
+      .sp-text-title { fill: var(--text); }
+      .sp-text-label { fill: var(--text-muted); }
+      .sp-line-grid { stroke: var(--border); }
+      .sp-line-axis { stroke: var(--border); }
+      .sp-line-baseline { stroke: var(--text-muted); }
+      .sp-curve { stroke: var(--accent); }
+      .sp-fill { fill: var(--accent); fill-opacity: 0.08; }
+      .sp-threshold { stroke: #10b981; }
+      .sp-threshold-text { fill: #10b981; }
+      .sp-dot-normal { fill: var(--text-muted); }
+      .sp-dot-focus { fill: #3b82f6; }
+      .sp-dot-shock { fill: #ef4444; }
+      .sp-dot-drop { fill: #10b981; }
+      .sp-dot-depth { fill: var(--accent); }
+      .sp-pill-bg { }
+      .sp-pill-text { fill: #ccc; font-weight: 600; }
+      .sp-pill-focus-bg { fill: #1e3a5f; stroke: #3b82f6; }
+      .sp-pill-focus-text { fill: #85b7eb; }
+      .sp-pill-shock-bg { fill: #3d1a1a; stroke: #ef4444; }
+      .sp-pill-shock-text { fill: #f09595; }
+      .sp-pill-command-bg { fill: #2a1f3d; stroke: var(--accent); }
+      .sp-pill-command-text { fill: #a78bfa; }
+      .sp-pill-drop-bg { fill: #143d2a; stroke: #10b981; }
+      .sp-pill-drop-text { fill: #5dc9a5; }
+      .sp-pill-normal-bg { fill: #2c2c2a; stroke: #555; }
+      .sp-legend-bg { fill: var(--bg-hover); stroke: var(--border); }
+      .sp-legend-text { fill: var(--text); }
+      .sp-legend-label { fill: var(--text-muted); }
+      .sp-sleep-badge { fill: var(--accent-dim); stroke: var(--accent); }
+      .sp-sleep-text { fill: #a78bfa; }
+      .sp-muted { fill: #777; }
+    }
+    </style>
+      <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M2 1L8 5L2 9" fill="none" stroke="#888" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+        <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+          <path d="M2 1L8 5L2 9" fill="none" stroke="#10b981" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+      </defs>
+      <rect x="0" y="0" width="720" height="540" class="sp-bg" rx="12"/>
+      <text x="360" y="32" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="600" class="sp-text-title">Теория спайка — график активности нервной системы</text>
+      <line x1="90" y1="55" x2="90" y2="400" class="sp-line-axis" stroke-width="0.5"/>
+      <line x1="90" y1="400" x2="670" y2="400" class="sp-line-axis" stroke-width="0.5"/>
+      <text x="78" y="60" text-anchor="end" font-family="system-ui, sans-serif" font-size="11" class="sp-text-label">Активность</text>
+      <text x="78" y="90" text-anchor="end" font-family="system-ui, sans-serif" font-size="11" class="sp-text-label">высокая</text>
+      <text x="78" y="250" text-anchor="end" font-family="system-ui, sans-serif" font-size="11" class="sp-text-label">норма</text>
+      <text x="78" y="390" text-anchor="end" font-family="system-ui, sans-serif" font-size="11" class="sp-text-label">низкая</text>
+      <line x1="86" y1="90" x2="90" y2="90" class="sp-line-grid" stroke-width="0.5"/>
+      <line x1="86" y1="250" x2="90" y2="250" class="sp-line-grid" stroke-width="0.5"/>
+      <line x1="86" y1="390" x2="90" y2="390" class="sp-line-grid" stroke-width="0.5"/>
+      <line x1="90" y1="90" x2="670" y2="90" class="sp-line-grid" stroke-width="0.5" stroke-dasharray="4 4"/>
+      <line x1="90" y1="390" x2="670" y2="390" class="sp-line-grid" stroke-width="0.5" stroke-dasharray="4 4"/>
+      <line x1="90" y1="310" x2="670" y2="310" class="sp-threshold" stroke-width="1" stroke-dasharray="6 4"/>
+      <rect x="90" y="312" width="132" height="16" rx="3" class="sp-bg"/>
+      <text x="96" y="323" font-family="system-ui, sans-serif" font-size="10" class="sp-threshold-text">Порог сомнамбулизма</text>
+      <path d="M140,250 L140,250 L200,250 Q260,250 300,90 Q340,-10 380,100 Q420,200 450,250 Q480,280 540,300 Q580,310 650,320 L650,400 L140,400 Z" class="sp-fill"/>
+      <path d="M90,250 L140,250 L200,250 Q260,250 300,90 Q340,-10 380,100 Q420,200 450,250 Q480,280 540,300 Q580,310 650,320" fill="none" class="sp-curve" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="90" y1="250" x2="200" y2="250" class="sp-line-baseline" stroke-width="0.5" stroke-dasharray="3 3"/>
+      <text x="145" y="240" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" class="sp-text-label">базовый уровень</text>
+      <circle cx="140" cy="250" r="5" class="sp-dot-normal"/>
+      <line x1="140" y1="255" x2="140" y2="395" class="sp-line-baseline" stroke-width="0.5" stroke-dasharray="3 3"/>
+      <rect x="105" y="395" width="70" height="24" rx="12" class="sp-pill-normal-bg" stroke="#555" stroke-width="0.5"/>
+      <text x="140" y="411" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="600" class="sp-pill-text">1. Обычное</text>
+      <text x="140" y="432" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" class="sp-text-label">человек бодр</text>
+      <circle cx="230" cy="225" r="5" class="sp-dot-focus"/>
+      <line x1="230" y1="230" x2="230" y2="445" class="sp-dot-focus" stroke-width="0.5" stroke-dasharray="3 3"/>
+      <rect x="195" y="445" width="70" height="24" rx="12" class="sp-pill-focus-bg" stroke-width="0.5"/>
+      <text x="230" y="461" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="600" class="sp-pill-focus-text">2. Фокус</text>
+      <text x="230" y="480" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" class="sp-text-label">внимание сужается</text>
+      <circle cx="300" cy="90" r="6" class="sp-dot-shock"/>
+      <line x1="300" y1="96" x2="300" y2="395" class="sp-dot-shock" stroke-width="0.5" stroke-dasharray="3 3"/>
+      <text x="300" y="78" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" class="sp-dot-shock">▲ ПИК ШОКА</text>
+      <rect x="265" y="395" width="70" height="24" rx="12" class="sp-pill-shock-bg" stroke-width="0.5"/>
+      <text x="300" y="411" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="600" class="sp-pill-shock-text">3. Шок</text>
+      <text x="300" y="432" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" class="sp-text-label">крит. фактор оглушён</text>
+      <circle cx="370" cy="65" r="4" fill="none" class="sp-curve" stroke-width="2"/>
+      <line x1="370" y1="70" x2="370" y2="445" class="sp-curve" stroke-width="0.5" stroke-dasharray="3 3"/>
+      <rect x="325" y="40" width="90" height="22" rx="6" class="sp-sleep-badge" stroke-width="1"/>
+      <text x="370" y="55" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="700" class="sp-sleep-text">«СПИ!»</text>
+      <text x="370" y="100" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" class="sp-muted">≈ 0.25 сек после пика</text>
+      <circle cx="370" cy="65" r="12" fill="none" class="sp-curve" stroke-width="0.5" stroke-dasharray="2 2" opacity="0.5"/>
+      <rect x="335" y="445" width="70" height="24" rx="12" class="sp-pill-command-bg" stroke-width="0.5"/>
+      <text x="370" y="461" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="600" class="sp-pill-command-text">4. Команда</text>
+      <text x="370" y="480" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" class="sp-text-label">окно открыто</text>
+      <circle cx="450" cy="250" r="5" class="sp-dot-drop"/>
+      <line x1="450" y1="256" x2="450" y2="395" class="sp-dot-drop" stroke-width="0.5" stroke-dasharray="3 3"/>
+      <path d="M420,280 L440,300" fill="none" class="sp-dot-drop" stroke-width="1.5" stroke-dasharray="3 2" marker-end="url(#arrow-green)"/>
+      <text x="408" y="292" text-anchor="end" font-family="system-ui, sans-serif" font-size="8" class="sp-dot-drop">провал</text>
+      <rect x="415" y="395" width="70" height="24" rx="12" class="sp-pill-drop-bg" stroke-width="0.5"/>
+      <text x="450" y="411" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="600" class="sp-pill-drop-text">5. Провал</text>
+      <text x="450" y="432" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" class="sp-text-label">под порог</text>
+      <circle cx="550" cy="305" r="5" class="sp-dot-depth"/>
+      <line x1="550" y1="310" x2="550" y2="445" class="sp-curve" stroke-width="0.5" stroke-dasharray="3 3"/>
+      <path d="M650,320 Q670,330 670,340" fill="none" class="sp-curve" stroke-width="2" marker-end="url(#arrow)"/>
+      <text x="658" y="332" text-anchor="start" font-family="system-ui, sans-serif" font-size="8" class="sp-muted">глубже</text>
+      <rect x="515" y="445" width="70" height="24" rx="12" class="sp-pill-command-bg" stroke-width="0.5"/>
+      <text x="550" y="461" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="600" class="sp-pill-command-text">6. Углубление</text>
+      <text x="550" y="480" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" class="sp-text-label">удержание транса</text>
+      <text x="380" y="508" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" class="sp-text-label">Время →</text>
+      <rect x="490" y="50" width="195" height="110" rx="8" class="sp-legend-bg" stroke-width="0.5"/>
+      <text x="502" y="70" font-family="system-ui, sans-serif" font-size="11" font-weight="600" class="sp-legend-text">Обозначения</text>
+      <line x1="502" y1="88" x2="522" y2="88" class="sp-curve" stroke-width="2.5"/>
+      <text x="528" y="92" font-family="system-ui, sans-serif" font-size="10" class="sp-legend-label">Кривая активности</text>
+      <line x1="502" y1="106" x2="522" y2="106" class="sp-threshold" stroke-width="1" stroke-dasharray="6 4"/>
+      <text x="528" y="110" font-family="system-ui, sans-serif" font-size="10" class="sp-legend-label">Порог сомнамбулизма</text>
+      <line x1="502" y1="124" x2="522" y2="124" class="sp-line-grid" stroke-width="0.5" stroke-dasharray="3 3"/>
+      <text x="528" y="128" font-family="system-ui, sans-serif" font-size="10" class="sp-legend-label">Фазы процесса (1–6)</text>
+      <circle cx="507" cy="143" r="3" class="sp-dot-shock"/>
+      <text x="528" y="147" font-family="system-ui, sans-serif" font-size="10" class="sp-legend-label">Пик шока</text>
+    </svg>
+          </a>
+          <p style="text-align:center;font-size:.8rem;color:var(--text-muted);margin-top:6px;">🖱 Нажмите для увеличения</p>
+        </div>
 
     <p style="margin-bottom:12px;">Ключевое понимание: <strong>пик не обязателен для входа в транс</strong> — классическое наведение Элмана не использует шок. Но пик позволяет войти в транс <strong>мгновенно</strong>, потому что он создаёт искусственный «обрыв» активности, который подсознание использует как трамплин.</p>
 
