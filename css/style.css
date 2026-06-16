@@ -624,6 +624,17 @@ footer a:hover { color: var(--accent); }
 .lesson-video:hover {
   border-color: var(--accent);
 }
+
+/* Active video player — clean, no padding/bg */
+.lesson-video-player {
+  margin-bottom: 28px;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.lesson-video-player iframe {
+  border-radius: var(--radius);
+}
+
 .lesson-video-icon {
   width: 64px;
   height: 64px;
