@@ -621,6 +621,16 @@ footer a:hover { color: var(--accent); }
   transition: border-color .2s;
   min-height: 180px;
 }
+/* When lesson-video contains an actual player (iframe), not a placeholder */
+.lesson-video:has(iframe) {
+  display: block;
+  padding: 0;
+  min-height: 0;
+  background: transparent;
+  border: none;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
 .lesson-video:hover {
   border-color: var(--accent);
 }
