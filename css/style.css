@@ -630,6 +630,9 @@ footer a:hover { color: var(--accent); }
   min-height: 0;
   background: transparent;
   border: none;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .lesson-video:has(iframe) iframe {
   border-radius: var(--radius);
