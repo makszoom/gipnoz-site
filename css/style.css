@@ -993,34 +993,26 @@ footer a:hover { color: var(--accent); }
    LESSON SIDEBAR — Module Navigation
    ============================================ */
 .lesson-layout {
-  display: grid;
-  grid-template-columns: 240px 1fr;
+  display: flex;
   gap: 32px;
   margin: 0 auto;
   padding: 40px 24px 80px;
-}
-
-/* Video — direct child of grid, spans both columns, centered to viewport */
-.lesson-layout > .lesson-video {
-  grid-column: 1 / -1;
-  justify-self: center;
-  width: 100%;
-  max-width: 800px;
-  margin-bottom: 28px;
 }
 
 .lesson-layout main {
   max-width: 800px;
   margin: 0;
   padding: 0;
+  flex: 1;
   min-width: 0;
 }
 
 .lesson-sidebar {
   width: 240px;
+  flex-shrink: 0;
   position: sticky;
   top: 80px;
-  align-self: start;
+  align-self: flex-start;
   max-height: calc(100vh - 100px);
   overflow-y: auto;
 }
