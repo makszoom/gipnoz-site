@@ -82,6 +82,7 @@ a:hover { color: var(--accent-hover); }
 header {
   position: sticky;
   top: 0;
+  z-index: 10;
   background: var(--header-bg);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -989,17 +990,22 @@ footer a:hover { color: var(--accent); }
 .lesson-layout {
   display: flex;
   gap: 32px;
-  max-width: 1200px;
   margin: 0 auto;
   padding: 40px 24px 80px;
 }
 
 .lesson-layout main {
-  max-width: none;
+  max-width: 800px;
   margin: 0;
   padding: 0;
   flex: 1;
   min-width: 0;
+}
+
+/* Video player stretches full width, past text max-width */
+.lesson-layout main .lesson-video:has(iframe) {
+  max-width: none;
+  width: 100%;
 }
 
 .lesson-sidebar {
