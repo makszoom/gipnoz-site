@@ -608,25 +608,7 @@ footer a:hover { color: var(--accent); }
 }
 
 /* ===== LESSON PAGE ===== */
-/* Full-width video container — sits outside lesson-layout, before sidebar+text */
-.lesson-video-container {
-  max-width: 1200px;
-  margin: 0 auto 28px;
-  padding: 0 24px;
-}
-.lesson-video-container .lesson-video {
-  display: block;
-  padding: 0;
-  min-height: 0;
-  background: transparent;
-  border: none;
-  border-radius: var(--radius);
-}
-.lesson-video-container .lesson-video iframe {
-  border-radius: var(--radius);
-}
-
-/* Placeholder mode — inside main, for lessons without video yet */
+/* Placeholder mode — centered card with play icon and CTA */
 .lesson-video {
   display: flex;
   flex-direction: column;
@@ -640,6 +622,17 @@ footer a:hover { color: var(--accent); }
   text-align: center;
   transition: border-color .2s;
   min-height: 180px;
+}
+/* Active player mode — after click, iframe replaces placeholder */
+.lesson-video:has(iframe) {
+  display: block;
+  padding: 0;
+  min-height: 0;
+  background: transparent;
+  border: none;
+}
+.lesson-video:has(iframe) iframe {
+  border-radius: var(--radius);
 }
 .lesson-video:hover {
   border-color: var(--accent);
