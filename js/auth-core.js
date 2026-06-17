@@ -4,7 +4,7 @@
 
   // --- Firebase Config ---
   const firebaseConfig = {
-    apiKey: "AIzaSyCJ_7qrXDXGGAC6czW5xsPXxvQ_LDnNr3w",
+    apiKey: "AIzaSy...Nr3w",
     authDomain: "gipnoz-site.firebaseapp.com",
     projectId: "gipnoz-site",
     storageBucket: "gipnoz-site.firebasestorage.app",
@@ -16,11 +16,16 @@
   firebase.initializeApp(firebaseConfig);
   const auth = firebase.auth();
 
-  // --- Auth State Listener ---
-  // Updates the auth link in the header on every page
-  auth.onAuthStateChanged(function(user) {
+  // --- Update the auth link in the header ---
+  function updateAuthLink(user) {
     var link = document.getElementById('auth-link');
-    if (!link) return;
+    // DOM not ready yet — wait for it
+    if (!link) {
+      document.addEventListener('DOMContentLoaded', function() {
+        updateAuthLink(user);
+      });
+      return;
+    }
 
     if (user) {
       // Logged in — show name, click to logout
@@ -35,9 +40,14 @@
     } else {
       // Not logged in — show login link
       link.textContent = link.getAttribute('data-label') || 'Sign in';
-      link.href = link.getAttribute('data-href') || 'login.html';
+      link.href = link.getAttribute('data-href') || '/login.html';
       link.onclick = null;
     }
+  }
+
+  // --- Auth State Listener ---
+  auth.onAuthStateChanged(function(user) {
+    updateAuthLink(user);
   });
 
   // --- FirebaseUI Config (used on login.html) ---
@@ -52,7 +62,6 @@
       privacyPolicyUrl: '/about.html'
     };
 
-    // Localization
     if (lang === 'ru') {
       uiConfig.signInFlow = 'popup';
     }
