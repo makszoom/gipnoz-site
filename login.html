@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Войти — Гипноз с нуля</title>
+  <meta name="description" content="Войдите через Google, чтобы получить доступ к видеоурокам гипноза.">
+  <link rel="canonical" href="https://gipnozfree.com/login.html">
+  <link rel="alternate" hreflang="ru" href="https://gipnozfree.com/login.html">
+  <link rel="alternate" hreflang="en" href="https://gipnozfree.com/en/login.html">
+  <link rel="alternate" hreflang="x-default" href="https://gipnozfree.com/">
+  <meta property="og:title" content="Войти — Гипноз с нуля">
+  <meta property="og:description" content="Войдите через Google, чтобы получить доступ к видеоурокам гипноза.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gipnozfree.com/login.html">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=109680006', 'ym');
+    ym(109680006, 'init', {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+    });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/109680006" style="position:absolute;left:-9999px;" alt="" /></div></noscript>
+  <script>
+  (function(){var t=localStorage.getItem("theme");if(t==="light"){document.documentElement.setAttribute("data-theme","light")}})();
+  </script>
+  <meta property="og:image" content="https://gipnozfree.com/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:image" content="https://gipnozfree.com/img/og-image.png">
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css">
+  <script src="js/auth-core.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">🧠 <span>гипноз</span>.с нуля</a>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="modules.html">Уроки</a>
+      <a href="scripts.html">Скрипты</a>
+      <a href="about.html">О проекте</a>
+      <a href="login.html" id="auth-link" data-label="Войти" data-href="login.html" data-confirm="Выйти?">Войти</a>
+      <button class="theme-toggle" onclick="toggleTheme()" title="Сменить тему">🌙</button>
+      <a href="en/login.html" style="font-weight:600;color:var(--accent);">EN</a>
+    </nav>
+    <button class="burger-btn" onclick="toggleMenu()" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="nav-overlay" onclick="toggleMenu()"></div>
+
+<main>
+  <section style="max-width:480px;margin:60px auto;text-align:center;">
+    <h1 style="font-size:1.8rem;margin-bottom:8px;">Войти</h1>
+    <p style="color:var(--text-muted);margin-bottom:32px;">Войдите через Google, чтобы получить доступ к видеоурокам</p>
+    <div id="firebaseui-auth-container"></div>
+    <p style="color:var(--text-muted);font-size:.85rem;margin-top:24px;">
+      Входя в аккаунт, вы соглашаетесь с <a href="about.html">условиями использования</a>.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <p>🧠 Гипноз с нуля — проект для обучения гипнотическим техникам.</p>
+  <p style="margin-top:6px;">По методике Джерри Кайн (Kayfabe) — быстрые и мгновенные техники гипноза</p>
+  <p style="margin-top:12px;"><a href="about.html">О проекте</a> • <a href="donate.html">Подписка</a></p>
+</footer>
+
+<script>
+function toggleMenu(){var n=document.querySelector('nav');var b=document.querySelector('.burger-btn');var o=document.querySelector('.nav-overlay');n.classList.toggle('open');b.classList.toggle('open');o.classList.toggle('open');document.body.classList.toggle('menu-open')}
+function toggleTheme(){var h=document.documentElement;if(h.getAttribute("data-theme")==="light"){h.removeAttribute("data-theme");localStorage.setItem("theme","dark");document.querySelector(".theme-toggle").textContent="🌙"}else{h.setAttribute("data-theme","light");localStorage.setItem("theme","light");document.querySelector(".theme-toggle").textContent="☀️"}}
+(function(){var b=document.querySelector(".theme-toggle");if(b&&document.documentElement.getAttribute("data-theme")==="light")b.textContent="☀️"})();
+</script>
+</body>
+</html>
