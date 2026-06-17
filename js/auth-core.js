@@ -4,7 +4,7 @@
 
   // --- Firebase Config ---
   const firebaseConfig = {
-    apiKey: "AIzaSyCJ_7qrXDXGGAC6czW5xsPXxvQ_LDnNr3w",
+    apiKey: "AIzaSy...Nr3w",
     authDomain: "gipnoz-site.firebaseapp.com",
     projectId: "gipnoz-site",
     storageBucket: "gipnoz-site.firebasestorage.app",
@@ -19,16 +19,17 @@
   // --- Update the auth link in the header ---
   function updateAuthLink(user) {
     var link = document.getElementById('auth-link');
-    // DOM not ready yet — wait for it
     if (!link) {
-      document.addEventListener('DOMContentLoaded', function() {
-        updateAuthLink(user);
-      });
+      // DOM not ready yet — wait for it
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() {
+          updateAuthLink(user);
+        });
+      }
       return;
     }
 
     if (user) {
-      // Logged in — show name, click to logout
       link.textContent = user.displayName || user.email || 'Profile';
       link.href = '#';
       link.onclick = function(e) {
@@ -38,7 +39,6 @@
         }
       };
     } else {
-      // Not logged in — show login link
       link.textContent = link.getAttribute('data-label') || 'Sign in';
       link.href = link.getAttribute('data-href') || '/login.html';
       link.onclick = null;
