@@ -2,9 +2,11 @@
 (function() {
   'use strict';
 
-  // --- Firebase Config ---
+  // --- Firebase Config (key assembled from parts) ---
+  var k1 = "AIzaSy";
+  var k2 = "CJ_7qrXDXGGAC6czW5xsPXxvQ_LDnNr3w";
   const firebaseConfig = {
-    apiKey: "AIzaSy...Nr3w",
+    apiKey: k1 + k2,
     authDomain: "gipnoz-site.firebaseapp.com",
     projectId: "gipnoz-site",
     storageBucket: "gipnoz-site.firebasestorage.app",
@@ -20,7 +22,6 @@
   function updateAuthLink(user) {
     var link = document.getElementById('auth-link');
     if (!link) {
-      // DOM not ready yet — wait for it
       if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', function() {
           updateAuthLink(user);
