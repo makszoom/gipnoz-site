@@ -4,7 +4,7 @@
 
   // --- Firebase Config ---
   const firebaseConfig = {
-    apiKey: "AIzaSy...Nr3w",
+    apiKey: "AIzaSyCJ_7qrXDXGGAC6czW5xsPXxvQ_LDnNr3w",
     authDomain: "gipnoz-site.firebaseapp.com",
     projectId: "gipnoz-site",
     storageBucket: "gipnoz-site.firebasestorage.app",
