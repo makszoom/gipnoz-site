@@ -54,13 +54,14 @@
   // --- FirebaseUI Config (used on login.html) ---
   window.initFirebaseUI = function(containerId, lang) {
     var ui = firebaseui.auth.AuthUI.getInstance() || new firebaseui.auth.AuthUI(auth);
+    var isEn = lang === 'en';
     var uiConfig = {
-      signInSuccessUrl: '/',
+      signInSuccessUrl: isEn ? '/en/' : '/',
       signInOptions: [
         firebase.auth.GoogleAuthProvider.PROVIDER_ID
       ],
-      tosUrl: '/about.html',
-      privacyPolicyUrl: '/about.html'
+      tosUrl: isEn ? '/en/about.html' : '/about.html',
+      privacyPolicyUrl: isEn ? '/en/about.html' : '/about.html'
     };
 
     uiConfig.signInFlow = 'popup';
