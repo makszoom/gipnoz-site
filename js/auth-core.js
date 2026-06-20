@@ -63,9 +63,7 @@
       privacyPolicyUrl: '/about.html'
     };
 
-    if (lang === 'ru') {
-      uiConfig.signInFlow = 'popup';
-    }
+    uiConfig.signInFlow = 'popup';
 
     ui.start('#' + (containerId || 'firebaseui-auth-container'), uiConfig);
   };
