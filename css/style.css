@@ -637,6 +637,67 @@ footer a:hover { color: var(--accent); }
   border-radius: var(--radius);
 }
 
+/* Gate placeholder (shown by gating.js when no access) */
+.lesson-video-gate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 44px 24px;
+  margin-bottom: 28px;
+  text-align: center;
+  transition: border-color .2s;
+  min-height: 180px;
+}
+.lesson-video-gate:hover {
+  border-color: var(--accent);
+}
+.lesson-video-gate .lesson-video-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--accent-dim);
+  border: 2px solid var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  transition: transform .2s, background .2s;
+}
+.lesson-video-gate:hover .lesson-video-icon {
+  transform: scale(1.05);
+  background: rgba(124, 58, 237, 0.2);
+}
+.lesson-video-gate .lesson-video-icon::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 18px solid var(--accent);
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  margin-left: 5px;
+}
+.lesson-video-gate h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+.lesson-video-gate p {
+  color: var(--text-muted);
+  font-size: .9rem;
+  max-width: 420px;
+  margin: 0 auto 20px;
+  line-height: 1.5;
+}
+.lesson-video-gate .btn {
+  display: inline-block;
+}
+
 .lesson-video-icon {
   width: 64px;
   height: 64px;
