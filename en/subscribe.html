@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscribe — Hypnosis from Scratch</title>
+  <meta name="description" content="Subscribe to unlock video lessons. $3/month or $30 lifetime. Text lessons are free.">
+  <link rel="alternate" hreflang="en" href="https://gipnozfree.com/en/subscribe.html">
+  <link rel="alternate" hreflang="ru" href="https://gipnozfree.com/subscribe.html">
+  <meta property="og:title" content="Subscribe — Hypnosis from Scratch">
+  <meta property="og:description" content="Subscribe to unlock video lessons. $3/month or $30 lifetime.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gipnozfree.com/en/subscribe.html">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://gipnozfree.com/en/subscribe.html">
+  <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
+<script>(function(){var t=localStorage.getItem("theme");if(t==="light"){document.documentElement.setAttribute("data-theme","light")}})();</script>
+
+  <meta property="og:image" content="https://gipnozfree.com/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:image" content="https://gipnozfree.com/img/og-image.png">
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="../index.html" class="logo">🧠 <span>hypnosis</span>.from scratch</a>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../modules.html">Lessons</a>
+      <a href="../scripts.html">Scripts</a>
+      <a href="../about.html">About</a>
+      <a href="subscribe.html" class="active">Subscribe</a>
+<a href="/en/login.html" id="auth-link" data-label="Sign in" data-href="/en/login.html" data-confirm="Sign out?">Sign in</a>
+            <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">🌙</button>
+      <a href="../index.html" style="font-weight:600;color:var(--accent);">RU</a>
+    </nav>
+    <button class="burger-btn" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="nav-overlay" onclick="toggleMenu()"></div>
+
+<main>
+
+  <section class="hero">
+    <h1>Subscribe <span>to Video Lessons</span></h1>
+    <p>Text lessons and scripts are free for everyone. Video lessons require a subscription.</p>
+  </section>
+
+  <section>
+    <h2 class="section-title" style="justify-content:center;">Choose a Plan</h2>
+    <div id="payment-plans"></div>
+  </section>
+
+  <section style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:40px 32px;text-align:center;margin-bottom:40px;">
+    <h2 style="font-size:1.5rem;margin-bottom:16px;">How It Works</h2>
+    <div style="max-width:600px;margin:0 auto;text-align:left;color:var(--text-muted);line-height:1.8;">
+      <p>1. Sign in with Google (button in the header)</p>
+      <p>2. Choose a plan and click «Pay with Crypto»</p>
+      <p>3. Send USDT (TRC-20) to the provided address</p>
+      <p>4. Videos unlock automatically after payment confirmation</p>
+      <p>5. Cancel anytime — no questions asked</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>🧠 Hypnosis from Scratch — an educational hypnosis project.</p>
+  <p style="margin-top:6px;">Based on Gerald Kein's Omni Hypnosis Training Center curriculum</p>
+  <p style="margin-top:12px;"><a href="../about.html">About</a> • <a href="subscribe.html">Subscribe</a></p>
+</footer>
+
+<script src="/js/auth-core.js"></script>
+<script src="/js/payments.js"></script>
+<script>
+
+function toggleMenu(){var n=document.querySelector('nav');var b=document.querySelector('.burger-btn');var o=document.querySelector('.nav-overlay');n.classList.toggle('open');b.classList.toggle('open');o.classList.toggle('open');document.body.classList.toggle('menu-open')}
+function toggleTheme(){var h=document.documentElement;if(h.getAttribute("data-theme")==="light"){h.removeAttribute("data-theme");localStorage.setItem("theme","dark");document.querySelector(".theme-toggle").textContent="🌙"}else{h.setAttribute("data-theme","light");localStorage.setItem("theme","light");document.querySelector(".theme-toggle").textContent="🌞"}}
+(function(){var b=document.querySelector(".theme-toggle");if(b&&document.documentElement.getAttribute("data-theme")==="light")b.textContent="🌞"})();
+</script>
+</body>
+</html>

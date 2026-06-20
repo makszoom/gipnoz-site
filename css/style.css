@@ -1168,7 +1168,133 @@ footer a:hover { color: var(--accent); }
   opacity: .5;
 }
 
-/* Mobile sidebar toggle */
+/* ===== PRICING / SUBSCRIPTION ===== */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 24px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pricing-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px 24px;
+  text-align: center;
+  transition: border-color .2s, transform .2s;
+}
+.pricing-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.pricing-card-featured {
+  border-color: var(--accent);
+  background: var(--accent-dim);
+  position: relative;
+}
+.pricing-card-featured::before {
+  content: attr(data-badge);
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent);
+  color: #fff;
+  font-size: .75rem;
+  font-weight: 600;
+  padding: 4px 16px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.pricing-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--text);
+}
+
+.pricing-amount {
+  margin-bottom: 20px;
+}
+.pricing-price {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+.pricing-period {
+  font-size: .9rem;
+  color: var(--text-muted);
+  margin-left: 4px;
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+  text-align: left;
+}
+.pricing-features li {
+  padding: 6px 0;
+  color: var(--text-muted);
+  font-size: .9rem;
+  border-bottom: 1px solid var(--border);
+}
+.pricing-features li:last-child {
+  border-bottom: none;
+}
+.pricing-features li::before {
+  content: "✓";
+  color: var(--accent);
+  margin-right: 8px;
+  font-weight: 700;
+}
+
+.btn-pay {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 24px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .2s;
+}
+.btn-pay:hover {
+  background: var(--accent-hover);
+}
+.btn-pay:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+.pricing-notice {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: .85rem;
+  margin-top: 16px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+  .pricing-price {
+    font-size: 1.8rem;
+  }
+}
 .sidebar-toggle {
   display: none;
   width: 100%;
