@@ -1,0 +1,24 @@
+{
+  "name": "gipnoz-site",
+  "version": "1.0.0",
+  "description": "Онлайн-курс гипноза по методике Джерри Кайн (Kayfabe).",
+  "main": "cloudflare-worker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makszoom/gipnoz-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/makszoom/gipnoz-site/issues"
+  },
+  "homepage": "https://github.com/makszoom/gipnoz-site#readme",
+  "devDependencies": {
+    "wrangler": "^4.103.0"
+  }
+}

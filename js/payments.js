@@ -16,7 +16,7 @@
   const isRu = LANG === 'ru';
 
   // --- Config ---
-  const WORKER_URL = 'https://gipnoz-payments.workers.dev'; // placeholder — update after deploy
+  const WORKER_URL = 'https://gipnoz-payments.makszoom85.workers.dev';
 
   const PLANS = isRu ? [
     {
