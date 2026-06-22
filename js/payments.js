@@ -45,23 +45,23 @@
     {
       id: 'en-monthly',
       title: 'Monthly',
-      price: '$3',
+      price: '$10',
       period: '/month',
       features: ['All 18 video lessons', 'Text lessons', 'Hypnosis scripts'],
       cta: 'Pay with Crypto',
       type: 'nowpayments',
-      amount: 3,
+      amount: 10,
       highlighted: false
     },
     {
       id: 'en-lifetime',
       title: 'Lifetime',
-      price: '$30',
+      price: '$50',
       period: ' once',
       features: ['Everything in Monthly', 'Lifetime access', 'Future lessons'],
       cta: 'Pay with Crypto',
       type: 'nowpayments',
-      amount: 30,
+      amount: 50,
       highlighted: true
     }
   ];
