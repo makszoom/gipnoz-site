@@ -45,12 +45,12 @@
     {
       id: 'en-monthly',
       title: 'Monthly',
-      price: '$10',
+      price: '$12',
       period: '/month',
       features: ['All 18 video lessons', 'Text lessons', 'Hypnosis scripts'],
       cta: 'Pay with Crypto',
       type: 'nowpayments',
-      amount: 10,
+      amount: 12,
       highlighted: false
     },
     {
