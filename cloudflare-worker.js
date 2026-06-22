@@ -250,7 +250,7 @@ export default {
         body: JSON.stringify({
           price_amount: amount,
           price_currency: 'usd',
-          pay_currency: 'ltc',
+          pay_currency: 'trx',
           order_id: 'uid:' + uid,
           order_description: plan === 'monthly'
             ? 'Gipnoz Monthly Subscription'
