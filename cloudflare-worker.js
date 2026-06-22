@@ -189,7 +189,7 @@ export default {
       // Determine plan from price
       const price = parseFloat(details.price_amount || '0');
       let plan, expiresAt;
-      if (price <= 15) {
+      if (price <= 5) {
         plan = 'monthly';
         const d = new Date();
         d.setMonth(d.getMonth() + 1);
@@ -250,6 +250,7 @@ export default {
         body: JSON.stringify({
           price_amount: amount,
           price_currency: 'usd',
+          pay_currency: 'ltc',
           order_id: 'uid:' + uid,
           order_description: plan === 'monthly'
             ? 'Gipnoz Monthly Subscription'
