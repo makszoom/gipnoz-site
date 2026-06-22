@@ -126,6 +126,15 @@ async function getPaymentDetails(paymentId) {
   return resp.json();
 }
 
+// --- CORS helper ---
+function corsHeaders() {
+  return {
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type'
+  };
+}
+
 // --- Main ---
 export default {
   async fetch(request, env) {
@@ -180,7 +189,7 @@ export default {
       // Determine plan from price
       const price = parseFloat(details.price_amount || '0');
       let plan, expiresAt;
-      if (price <= 5) {
+      if (price <= 15) {
         plan = 'monthly';
         const d = new Date();
         d.setMonth(d.getMonth() + 1);
@@ -198,18 +207,31 @@ export default {
       return new Response('Firestore write failed', { status: 500 });
     }
 
+    // CORS preflight
+    if (request.method === 'OPTIONS') {
+      return new Response(null, {
+        status: 204,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+          'Access-Control-Allow-Headers': 'Content-Type',
+          'Access-Control-Max-Age': '86400'
+        }
+      });
+    }
+
     // Create payment (called by payments.js)
     if (url.pathname === '/create-payment' && request.method === 'POST') {
       let reqData;
       try { reqData = JSON.parse(await request.text()); } catch {
-        return new Response('Invalid JSON', { status: 400 });
+        return new Response('Invalid JSON', { status: 400, headers: corsHeaders() });
       }
 
       const { uid, plan, amount } = reqData;
       if (!uid || !plan || !amount) {
         return new Response(JSON.stringify({ error: 'Missing uid/plan/amount' }), {
           status: 400,
-          headers: { 'Content-Type': 'application/json' }
+          headers: { 'Content-Type': 'application/json', ...corsHeaders() }
         });
       }
 
@@ -241,12 +263,12 @@ export default {
       if (invoiceData.invoice_url) {
         return new Response(JSON.stringify({ payment_url: invoiceData.invoice_url }), {
           status: 200,
-          headers: { 'Content-Type': 'application/json' }
+          headers: { 'Content-Type': 'application/json', ...corsHeaders() }
         });
       }
       return new Response(JSON.stringify({ error: 'Failed to create invoice', detail: invoiceData }), {
         status: 500,
-        headers: { 'Content-Type': 'application/json' }
+        headers: { 'Content-Type': 'application/json', ...corsHeaders() }
       });
     }
 
