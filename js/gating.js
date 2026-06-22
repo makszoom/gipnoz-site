@@ -20,7 +20,7 @@
     gateSubscribeTitle: isRu ? 'Оформите подписку' : 'Subscribe to watch',
     gateSubscribeText: isRu
       ? 'Видео доступно по подписке — 99 ₽/мес или 999 ₽ навсегда.'
-      : 'Video requires a subscription — $12/month or $50 lifetime.',
+      : 'Video requires a subscription — $11/month or $50 lifetime.',
     gateSubscribeBtn: isRu ? 'Открыть доступ' : 'Unlock access',
     gateSubscribeHref: isRu ? '/donate.html' : '/en/donate.html',
 
