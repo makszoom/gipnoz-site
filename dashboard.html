@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет — Гипноз с нуля</title>
+  <meta name="description" content="Личный кабинет: статус подписки, список уроков, управление аккаунтом.">
+  <link rel="alternate" hreflang="ru" href="https://gipnozfree.com/dashboard.html">
+  <link rel="alternate" hreflang="en" href="https://gipnozfree.com/en/dashboard.html">
+  <meta property="og:title" content="Личный кабинет — Гипноз с нуля">
+  <meta property="og:description" content="Статус подписки, список уроков, управление аккаунтом.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gipnozfree.com/dashboard.html">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://gipnozfree.com/dashboard.html">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
+<script>(function(){var t=localStorage.getItem("theme");if(t==="light"){document.documentElement.setAttribute("data-theme","light")}})();</script>
+  <meta property="og:image" content="https://gipnozfree.com/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:image" content="https://gipnozfree.com/img/og-image.png">
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">🧠 <span>гипноз</span>.с нуля</a>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="modules.html">Уроки</a>
+      <a href="scripts.html">Скрипты</a>
+      <a href="about.html">О проекте</a>
+      <a href="subscribe.html">Подписка</a>
+      <a href="dashboard.html" class="active">Кабинет</a>
+<a href="/login.html" id="auth-link" data-label="Войти" data-href="/login.html" data-confirm="Выйти?">Войти</a>
+      <button class="theme-toggle" onclick="toggleTheme()" title="Сменить тему">🌙</button>
+      <a href="en/dashboard.html" style="font-weight:600;color:var(--accent);">EN</a>
+    </nav>
+    <button class="burger-btn" onclick="toggleMenu()" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="nav-overlay" onclick="toggleMenu()"></div>
+
+<main>
+
+  <section class="hero">
+    <h1>Личный <span>кабинет</span></h1>
+    <p id="dashboard-greeting">Загрузка…</p>
+  </section>
+
+  <!-- Subscription Status -->
+  <section>
+    <h2 class="section-title">Статус подписки</h2>
+    <div id="subscription-status" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:32px;text-align:center;">
+      <p style="color:var(--text-muted);">Загрузка…</p>
+    </div>
+  </section>
+
+  <!-- Quick Links -->
+  <section>
+    <h2 class="section-title">Быстрые ссылки</h2>
+    <div class="card-grid card-grid-2">
+      <a href="modules.html" class="card" style="text-align:center;padding:24px;">
+        <h3>📚 Все уроки</h3>
+        <p style="color:var(--text-muted);">37 уроков — тексты бесплатно, видео по подписке</p>
+      </a>
+      <a href="scripts.html" class="card" style="text-align:center;padding:24px;">
+        <h3>📝 Скрипты гипноза</h3>
+        <p style="color:var(--text-muted);">Готовые скрипты для практики</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Account -->
+  <section style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:32px;text-align:center;margin-bottom:40px;">
+    <h2 style="font-size:1.3rem;margin-bottom:16px;">Аккаунт</h2>
+    <p id="dashboard-email" style="color:var(--text-muted);margin-bottom:20px;"></p>
+    <button id="dashboard-signout" class="btn" style="background:var(--text-muted);">Выйти</button>
+  </section>
+
+</main>
+
+<footer>
+  <p>🧠 Гипноз с нуля — образовательный проект по гипнозу.</p>
+  <p style="margin-top:4px;font-size:.8rem;color:var(--text-muted);">ИНН 720319977466</p>
+  <p style="margin-top:6px;">Основан на программе Omni Hypnosis Training Center Джеральда Кейна</p>
+  <p style="margin-top:12px;"><a href="about.html">О проекте</a> • <a href="subscribe.html">Подписка</a> • <a href="dashboard.html">Кабинет</a></p>
+</footer>
+
+<script src="/js/auth-core.js"></script>
+<script>
+// --- Dashboard logic ---
+(function() {
+  'use strict';
+
+  var greeting = document.getElementById('dashboard-greeting');
+  var statusEl = document.getElementById('subscription-status');
+  var emailEl = document.getElementById('dashboard-email');
+  var signoutBtn = document.getElementById('dashboard-signout');
+
+  function waitForAuth(cb) {
+    if (typeof firebase === 'undefined' || !firebase.auth) {
+      setTimeout(function() { waitForAuth(cb); }, 200);
+      return;
+    }
+    firebase.auth().onAuthStateChanged(function(user) {
+      if (!user) {
+        window.location.href = '/login.html';
+        return;
+      }
+      cb(user);
+    });
+  }
+
+  function formatDate(ts) {
+    if (!ts) return '—';
+    var d = ts.toDate ? ts.toDate() : new Date(ts);
+    return d.toLocaleDateString('ru-RU', { day: 'numeric', month: 'long', year: 'numeric' });
+  }
+
+  function renderStatus(sub) {
+    if (!sub || sub.status !== 'active') {
+      statusEl.innerHTML =
+        '<div style="font-size:3rem;margin-bottom:12px;">🔒</div>' +
+        '<h3 style="margin-bottom:8px;">Нет активной подписки</h3>' +
+        '<p style="color:var(--text-muted);margin-bottom:20px;">Видео-уроки недоступны. Оформите подписку, чтобы открыть доступ.</p>' +
+        '<a href="subscribe.html" class="btn">Оформить подписку</a>';
+      return;
+    }
+
+    var planName = sub.plan === 'monthly' ? 'Месячная (99 ₽/мес)' : 'Навсегда (999 ₽)';
+    var expiresText = sub.expiresAt
+      ? '<p style="color:var(--text-muted);">Действует до: <strong>' + formatDate(sub.expiresAt) + '</strong></p>'
+      : '<p style="color:var(--text-muted);">Тип: <strong>Пожизненный доступ</strong></p>';
+
+    statusEl.innerHTML =
+      '<div style="font-size:3rem;margin-bottom:12px;">✅</div>' +
+      '<h3 style="margin-bottom:8px;color:#10b981;">Подписка активна</h3>' +
+      '<p style="margin-bottom:4px;"><strong>' + planName + '</strong></p>' +
+      expiresText +
+      '<p style="margin-top:16px;"><a href="modules.html" class="btn">Смотреть уроки</a></p>';
+  }
+
+  waitForAuth(function(user) {
+    greeting.textContent = 'Привет, ' + (user.displayName || 'пользователь') + '!';
+    emailEl.textContent = user.email || '';
+
+    // Load subscription from Firestore
+    try {
+      var db = firebase.firestore();
+      db.collection('subscriptions').doc(user.uid).get().then(function(doc) {
+        if (doc.exists) {
+          renderStatus(doc.data());
+        } else {
+          renderStatus(null);
+        }
+      }).catch(function() {
+        renderStatus(null);
+      });
+    } catch(e) {
+      renderStatus(null);
+    }
+  });
+
+  signoutBtn.addEventListener('click', function() {
+    firebase.auth().signOut().then(function() {
+      window.location.href = '/';
+    });
+  });
+})();
+
+function toggleMenu(){var n=document.querySelector('nav');var b=document.querySelector('.burger-btn');var o=document.querySelector('.nav-overlay');n.classList.toggle('open');b.classList.toggle('open');o.classList.toggle('open');document.body.classList.toggle('menu-open')}
+function toggleTheme(){var h=document.documentElement;if(h.getAttribute("data-theme")==="light"){h.removeAttribute("data-theme");localStorage.setItem("theme","dark");document.querySelector(".theme-toggle").textContent="🌙"}else{h.setAttribute("data-theme","light");localStorage.setItem("theme","light");document.querySelector(".theme-toggle").textContent="🌞"}}
+(function(){var b=document.querySelector(".theme-toggle");if(b&&document.documentElement.getAttribute("data-theme")==="light")b.textContent="🌞"})();
+</script>
+</body>
+</html>
