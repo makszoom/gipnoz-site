@@ -18,7 +18,12 @@
   firebase.initializeApp(firebaseConfig);
   const auth = firebase.auth();
 
-  // --- Update the auth link in the header ---
+  // --- Language detection ---
+  function isEn() {
+    return document.documentElement.lang === 'en';
+  }
+
+  // --- Update the auth area in the header ---
   function updateAuthLink(user) {
     var link = document.getElementById('auth-link');
     if (!link) {
@@ -31,15 +36,40 @@
     }
 
     if (user) {
-      link.textContent = user.displayName || user.email || 'Profile';
-      link.href = '#';
-      link.onclick = function(e) {
+      // Replace the link with a dropdown
+      var name = user.displayName || user.email || 'Profile';
+      var dashboardLabel = isEn() ? 'Dashboard' : 'Кабинет';
+      var dashboardHref = isEn() ? '/en/dashboard.html' : '/dashboard.html';
+      var signOutLabel = isEn() ? 'Sign out' : 'Выйти';
+
+      // Create dropdown HTML
+      var dropdown = document.createElement('span');
+      dropdown.className = 'auth-dropdown';
+      dropdown.innerHTML =
+        '<span class="auth-dropdown-toggle" onclick="event.stopPropagation();this.parentElement.classList.toggle(\'open\')">' + name + ' ▾</span>' +
+        '<div class="auth-dropdown-menu">' +
+          '<a href="' + dashboardHref + '">' + dashboardLabel + '</a>' +
+          '<a href="#" class="auth-signout">' + signOutLabel + '</a>' +
+        '</div>';
+
+      // Replace the link
+      link.parentNode.replaceChild(dropdown, link);
+
+      // Add signout handler
+      dropdown.querySelector('.auth-signout').onclick = function(e) {
         e.preventDefault();
-        if (confirm(link.getAttribute('data-confirm') || 'Sign out?')) {
-          auth.signOut();
-        }
+        auth.signOut();
       };
+
+      // Close dropdown on outside click
+      document.addEventListener('click', function(e) {
+        if (!dropdown.contains(e.target)) {
+          dropdown.classList.remove('open');
+        }
+      });
+
     } else {
+      // Show login link
       link.textContent = link.getAttribute('data-label') || 'Sign in';
       link.href = link.getAttribute('data-href') || '/login.html';
       link.onclick = null;

@@ -127,6 +127,52 @@ nav a {
 nav a:hover { color: var(--text); }
 nav a.active { color: var(--accent); }
 
+/* ===== AUTH DROPDOWN ===== */
+.auth-dropdown {
+  position: relative;
+  margin-left: 24px;
+}
+.auth-dropdown-toggle {
+  color: var(--accent);
+  font-size: .9rem;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+.auth-dropdown-toggle:hover { color: var(--accent-hover); }
+.auth-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  min-width: 160px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.4);
+  z-index: 100;
+  overflow: hidden;
+}
+.auth-dropdown.open .auth-dropdown-menu { display: block; }
+.auth-dropdown-menu a {
+  display: block;
+  padding: 10px 16px;
+  color: var(--text);
+  font-size: .9rem;
+  margin: 0;
+  transition: background .15s;
+}
+.auth-dropdown-menu a:hover {
+  background: var(--bg-hover);
+  color: var(--text);
+}
+.auth-dropdown-menu a.auth-signout {
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+}
+.auth-dropdown-menu a.auth-signout:hover { color: #ef4444; }
+
 /* ===== BURGER MENU (mobile) ===== */
 .burger-btn {
   display: none;
@@ -202,6 +248,33 @@ body.menu-open { overflow: hidden; }
   nav a:hover { color: var(--text-muted); }
   nav a:last-child { border-bottom: none; }
   .theme-toggle { margin: 16px 0 0; align-self: flex-start; }
+
+  /* Auth dropdown in mobile nav */
+  .auth-dropdown {
+    margin: 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .auth-dropdown-toggle {
+    display: block;
+    padding: 16px 0;
+    font-size: 1rem;
+    color: var(--accent);
+  }
+  .auth-dropdown-menu {
+    position: static;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    margin-top: 0;
+    background: transparent;
+    min-width: 0;
+  }
+  .auth-dropdown-menu a {
+    padding: 12px 0 12px 16px;
+    font-size: .95rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .auth-dropdown-menu a:last-child { border-bottom: none; }
 }
 
 /* ===== MAIN ===== */
