@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Подписка — Гипноз с нуля</title>
-  <meta name="description" content="Оформите подписку на видеоуроки гипноза. 99₽/мес или 999₽ навсегда. Тексты уроков бесплатно.">
+  <title>Доступ к видео — Гипноз с нуля</title>
+  <meta name="description" content="Зарегистрируйтесь и получите бесплатный доступ ко всем 37 видеоурокам гипноза. Тексты и скрипты — свободно.">
   <link rel="alternate" hreflang="ru" href="https://gipnozfree.com/subscribe.html">
   <link rel="alternate" hreflang="en" href="https://gipnozfree.com/en/subscribe.html">
-  <meta property="og:title" content="Подписка — Гипноз с нуля">
-  <meta property="og:description" content="Оформите подписку на видеоуроки гипноза. 99₽/мес или 999₽ навсегда.">
+  <meta property="og:title" content="Доступ к видео — Гипноз с нуля">
+  <meta property="og:description" content="Зарегистрируйтесь и получите бесплатный доступ ко всем 37 видеоурокам гипноза.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://gipnozfree.com/subscribe.html">
   <meta property="og:locale" content="ru_RU">
@@ -47,7 +47,6 @@
   <!-- Firebase SDKs -->
   <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
 </head>
 <body>
 
@@ -72,23 +71,52 @@
 <main>
 
   <section class="hero">
-    <h1>Подписка <span>на видеоуроки</span></h1>
-    <p>Тексты уроков и скрипты — бесплатно для всех. Видеоуроки — по подписке.</p>
+    <h1>Видеоуроки — <span>бесплатно</span></h1>
+    <p>Зарегистрируйтесь через Google — и все 37 видеоуроков откроются. Тексты и скрипты свободны без регистрации.</p>
   </section>
 
   <section>
-    <h2 class="section-title" style="justify-content:center;">Выберите тариф</h2>
-    <div id="payment-plans"></div>
+    <h2 class="section-title" style="justify-content:center;">Что вы получите</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>📺 37 видеоуроков</h3>
+        <p>Полный курс гипноза: от базовых техник до мгновенных индукций. Все видео — в оригинале с русскими субтитрами.</p>
+      </div>
+      <div class="card">
+        <h3>📝 34 скрипта</h3>
+        <p>Готовые тексты для наведений, углубления транса и терапии. Берите и используйте.</p>
+      </div>
+      <div class="card">
+        <h3>🔓 Без оплаты</h3>
+        <p>Никаких карт, крипты и подписок. Только регистрация через Google — один клик.</p>
+      </div>
+      <div class="card">
+        <h3>🚫 Без рекламы</h3>
+        <p>Никакой рекламы, трекеров и сбора данных. Только контент.</p>
+      </div>
+    </div>
   </section>
 
   <section style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:40px 32px;text-align:center;margin-bottom:40px;">
-    <h2 style="font-size:1.5rem;margin-bottom:16px;">Как это работает</h2>
+    <h2 style="font-size:1.5rem;margin-bottom:16px;">Как получить доступ</h2>
     <div style="max-width:600px;margin:0 auto;text-align:left;color:var(--text-muted);line-height:1.8;">
-      <p>1. Войдите через Google (кнопка «Войти» вверху)</p>
-      <p>2. Выберите тариф и нажмите «Оплатить»</p>
-      <p>3. После оплаты видео откроются автоматически</p>
-      <p>4. Подписку можно отменить в любой момент</p>
+      <p>1. Нажмите «Войти» вверху страницы</p>
+      <p>2. Войдите через Google (один клик)</p>
+      <p>3. Все видео откроются автоматически</p>
+      <p>4. В личном кабинете — статус и список уроков</p>
     </div>
+    <div style="margin-top:24px;">
+      <a href="/login.html" class="btn" style="font-size:1.1rem;padding:16px 40px;">Войти через Google →</a>
+    </div>
+  </section>
+
+  <section style="text-align:center;padding:20px 0;margin-bottom:40px;">
+    <h2 class="section-title" style="justify-content:center;">Поддержать проект</h2>
+    <p style="color:var(--text-muted);max-width:550px;margin:0 auto 24px;">Видео бесплатны. Если хотите помочь проекту — можно поддержать донатом.</p>
+    <div class="donate-options">
+      <a href="https://www.sberbank.ru/ru/choise_bank?requisiteNumber=79199526887&bankCode=100000000111" target="_blank" rel="noopener" class="btn" style="padding:14px 40px;font-size:1.05rem;">💳 Поддержать через Сбер</a>
+    </div>
+    <p class="donate-note">Спасибо, что делаете проект возможным ❤️</p>
   </section>
 
 </main>
@@ -101,7 +129,6 @@
 </footer>
 
 <script src="/js/auth-core.js"></script>
-<script src="/js/payments.js"></script>
 <script>
 
 function toggleMenu(){var n=document.querySelector('nav');var b=document.querySelector('.burger-btn');var o=document.querySelector('.nav-overlay');n.classList.toggle('open');b.classList.toggle('open');o.classList.toggle('open');document.body.classList.toggle('menu-open')}

@@ -137,7 +137,7 @@
       return;
     }
 
-    var planName = sub.plan === 'monthly' ? 'Месячная (99 ₽/мес)' : 'Навсегда (999 ₽)';
+    var planName = sub.plan === 'monthly' ? 'Месячная' : 'Навсегда';
     var expiresText = sub.expiresAt
       ? '<p style="color:var(--text-muted);">Действует до: <strong>' + formatDate(sub.expiresAt) + '</strong></p>'
       : '<p style="color:var(--text-muted);">Тип: <strong>Пожизненный доступ</strong></p>';
