@@ -1,5 +1,7 @@
 /* ===== Gating — Video Paywall =====
- * Hides .lesson-video-player behind auth + subscription check.
+ * Hides .lesson-video-player behind auth (+ subscription for EN).
+ * RU: logged in → video unlocked (free after registration)
+ * EN: logged in + active subscription → video unlocked
  * Requires: auth-core.js (Firebase init + auth), firebase-firestore-compat.js
  */
 (function() {
@@ -22,7 +24,7 @@
       ? 'Видео доступно по подписке — 99 ₽/мес или 999 ₽ навсегда.'
       : 'Video requires a subscription — $12/month or $50 lifetime.',
     gateSubscribeBtn: isRu ? 'Открыть доступ' : 'Unlock access',
-    gateSubscribeHref: isRu ? '/donate.html' : '/en/donate.html',
+    gateSubscribeHref: isRu ? '/subscribe.html' : '/en/subscribe.html',
 
     gateLoading: isRu ? 'Загрузка…' : 'Loading…'
   };
@@ -57,11 +59,9 @@
     var player = document.querySelector('.lesson-video-player');
     if (!player) return;
 
-    // Remove existing gate if any
     var existing = document.querySelector('.lesson-video-gate');
     if (existing) existing.remove();
 
-    // Hide player, insert gate before it
     player.style.display = 'none';
     var gate = createGate(state);
     player.parentNode.insertBefore(gate, player);
@@ -71,15 +71,13 @@
     var player = document.querySelector('.lesson-video-player');
     if (!player) return;
 
-    // Remove gate
     var gate = document.querySelector('.lesson-video-gate');
     if (gate) gate.remove();
 
-    // Show player
     player.style.display = '';
   }
 
-  // --- Subscription check via Firestore ---
+  // --- Subscription check via Firestore (EN only) ---
   function checkSubscription(uid, callback) {
     try {
       var db = firebase.firestore();
@@ -89,9 +87,7 @@
           return;
         }
         var data = doc.data();
-        // Check if subscription is active (status === 'active' and not expired)
         if (data.status === 'active') {
-          // If there's an expiry, check it
           if (data.expiresAt) {
             var now = firebase.firestore.Timestamp.now();
             if (data.expiresAt.toMillis() > now.toMillis()) {
@@ -100,8 +96,7 @@
               callback(false);
             }
           } else {
-            // No expiry = lifetime
-            callback(true);
+            callback(true); // lifetime
           }
         } else {
           callback(false);
@@ -116,9 +111,7 @@
 
   // --- Main ---
   function init() {
-    // Wait for Firebase auth to be ready
     if (typeof firebase === 'undefined' || !firebase.auth) {
-      // Retry after a short delay
       setTimeout(init, 200);
       return;
     }
@@ -127,8 +120,11 @@
       if (!user) {
         // Not logged in → show login gate
         showGate('login');
+      } else if (isRu) {
+        // RU: logged in = free access, no subscription check
+        showPlayer();
       } else {
-        // Logged in → check subscription
+        // EN: logged in → check subscription
         checkSubscription(user.uid, function(hasSub) {
           if (hasSub) {
             showPlayer();
@@ -140,7 +136,6 @@
     });
   }
 
-  // Start when DOM is ready
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {
