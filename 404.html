@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RMV8EW30RW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RMV8EW30RW');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
+  <title>Страница не найдена · 404 · Гипноз с нуля</title>
+  <meta name="description" content="Страница не найдена. Вернитесь на главную или посмотрите бесплатные уроки гипноза.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="stylesheet" href="css/style.css">
+  <script>(function(){var t=localStorage.getItem("theme");if(t==="light"){document.documentElement.setAttribute("data-theme","light")}})();</script>
+  <link rel="canonical" href="https://gipnozfree.com/404.html">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">🧠 <span>гипноз</span>.с нуля</a>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="modules.html">Уроки</a>
+      <a href="scripts.html">Скрипты</a>
+      <a href="subscribe.html">Подписка</a>
+      <a href="/login.html" id="auth-link" data-label="Войти" data-href="/login.html" data-confirm="Выйти?">Войти</a>
+      <button class="theme-toggle" onclick="toggleTheme()" title="Переключить тему">🌙</button>
+      <a href="en/index.html" style="font-weight:600;color:var(--accent);">EN</a>
+    </nav>
+    <button class="burger-btn" onclick="toggleMenu()" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="nav-overlay" onclick="toggleMenu()"></div>
+
+<main style="max-width:600px;margin:0 auto;padding:80px 20px 100px;text-align:center;">
+
+  <div style="font-size:5rem;font-weight:800;color:var(--accent);line-height:1;margin-bottom:16px;">404</div>
+  <h1 style="font-size:1.6rem;font-weight:700;margin-bottom:12px;">Страница не найдена</h1>
+  <p style="color:var(--text-muted);margin-bottom:32px;font-size:1.05rem;">
+    Возможно, страница была перемещена или удалена.<br>
+    Но у нас есть кое-что получше — бесплатный курс гипноза.
+  </p>
+
+  <div style="display:flex;flex-direction:column;gap:12px;max-width:320px;margin:0 auto 40px;">
+    <a href="index.html" class="btn" style="background:var(--accent);color:#fff;font-weight:700;padding:14px 32px;border-radius:10px;display:block;text-decoration:none;">На главную</a>
+    <a href="modules.html" class="btn" style="background:var(--card-bg);color:var(--text);font-weight:600;padding:14px 32px;border-radius:10px;display:block;text-decoration:none;border:1px solid var(--border);">Бесплатные уроки гипноза</a>
+    <a href="scripts.html" class="btn" style="background:var(--card-bg);color:var(--text);font-weight:600;padding:14px 32px;border-radius:10px;display:block;text-decoration:none;border:1px solid var(--border);">Гипнотические скрипты</a>
+  </div>
+
+  <div style="border-top:1px solid var(--border);padding-top:24px;">
+    <p style="color:var(--text-muted);font-size:.9rem;margin-bottom:12px;">Популярные разделы:</p>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;">
+      <a href="en/how-hypnosis-works.html" style="color:var(--accent);font-size:.9rem;">How Hypnosis Works</a>
+      <a href="en/self-hypnosis.html" style="color:var(--accent);font-size:.9rem;">Self-Hypnosis</a>
+      <a href="en/anxiety.html" style="color:var(--accent);font-size:.9rem;">Hypnosis for Anxiety</a>
+      <a href="ru/samogipnoz.html" style="color:var(--accent);font-size:.9rem;">Самогипноз</a>
+      <a href="ru/kak-rabotaet-gipnoz.html" style="color:var(--accent);font-size:.9rem;">Как работает гипноз</a>
+      <a href="ru/obuchenie-gipnozu.html" style="color:var(--accent);font-size:.9rem;">Обучение гипнозу</a>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>🧠 Гипноз с нуля — образовательный проект по гипнозу.</p>
+  <p style="margin-top:4px;font-size:.8rem;color:var(--text-muted);">ИНН 720319977466</p>
+  <p style="margin-top:12px;"><a href="subscribe.html">Подписка</a> • <a href="about.html">О проекте</a> • <a href="dashboard.html">Кабинет</a></p>
+</footer>
+
+<script src="/js/auth-core.js"></script>
+<script>
+function toggleMenu(){var n=document.querySelector('nav');var b=document.querySelector('.burger-btn');var o=document.querySelector('.nav-overlay');n.classList.toggle('open');b.classList.toggle('open');o.classList.toggle('open');document.body.classList.toggle('menu-open')}
+function toggleTheme(){var h=document.documentElement;if(h.getAttribute("data-theme")==="light"){h.removeAttribute("data-theme");localStorage.setItem("theme","dark");document.querySelector(".theme-toggle").textContent="🌙"}else{h.setAttribute("data-theme","light");localStorage.setItem("theme","light");document.querySelector(".theme-toggle").textContent="🌞"}}
+(function(){var b=document.querySelector(".theme-toggle");if(b&&document.documentElement.getAttribute("data-theme")==="light")b.textContent="🌞"})();
+</script>
+</body>
+</html>
