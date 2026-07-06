@@ -78,7 +78,6 @@
       <a href="modules.html">Lessons</a>
       <a href="scripts.html">Scripts</a>
       <a href="subscribe.html">Subscribe</a>
-      <a href="/en/login.html" id="auth-link" data-label="Sign in" data-href="/en/login.html" data-confirm="Sign out?">Sign in</a>
       <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">🌙</button>
     </nav>
     <button class="burger-btn" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -226,8 +225,6 @@
   <p style="margin-top:4px;font-size:.8rem;color:var(--text-muted);">ИНН 720319977466</p>
   <p style="margin-top:12px;"><a href="subscribe.html">Subscribe</a> • <a href="about.html">About</a> • <a href="dashboard.html">Dashboard</a></p>
 </footer>
-
-<script src="/js/auth-core.js"></script>
 <script>
 function toggleMenu(){var n=document.querySelector('nav');var b=document.querySelector('.burger-btn');var o=document.querySelector('.nav-overlay');n.classList.toggle('open');b.classList.toggle('open');o.classList.toggle('open');document.body.classList.toggle('menu-open')}
 function toggleTheme(){var h=document.documentElement;if(h.getAttribute("data-theme")==="light"){h.removeAttribute("data-theme");localStorage.setItem("theme","dark");document.querySelector(".theme-toggle").textContent="🌙"}else{h.setAttribute("data-theme","light");localStorage.setItem("theme","light");document.querySelector(".theme-toggle").textContent="🌞"}}
