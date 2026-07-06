@@ -12,6 +12,20 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function(){
+      var saved = localStorage.getItem('preferred_lang');
+      if(saved === 'en'){
+        var path = window.location.pathname;
+        if(!/^\/en(\/|$)/.test(path)){
+          var enPath = '/en' + (path === '/' ? '/index.html' : path);
+          window.location.href = 'https://gipnozfree.com' + enPath;
+        }
+      }
+    })();
+  </script>
+
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">

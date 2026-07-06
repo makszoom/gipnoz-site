@@ -14,6 +14,19 @@
   <meta name="google-site-verification" content="2F4JYeb27ZKVf0utjU8QS4GLRsW8CoZ3MSiE-cfqtn0" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function(){
+      var saved = localStorage.getItem('preferred_lang');
+      if(saved === 'en'){
+        var path = window.location.pathname;
+        if(!/^\/en(\/|$)/.test(path)){
+          var enPath = '/en' + (path === '/' ? '/index.html' : path);
+          window.location.href = 'https://gipnozfree.com' + enPath;
+        }
+      }
+    })();
+  </script>
+
   <title>Arm drop + амнезия чисел | Гипноз с нуля</title>
   <meta name="description" content="Обратный счёт от 100 с внушением на амнезию чисел, скрытый тест на сомнамбулизм, хлопок по лбу, переход к ментальному расслаблению Бесплатный скрипт.">
   <link rel="stylesheet" href="../css/style.css">

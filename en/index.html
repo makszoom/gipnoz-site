@@ -14,6 +14,16 @@
   <meta name="google-site-verification" content="2F4JYeb27ZKVf0utjU8QS4GLRsW8CoZ3MSiE-cfqtn0" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function(){
+      var saved = localStorage.getItem('preferred_lang');
+      if(saved === 'ru'){
+        if(/^\/en(\/|$)/.test(window.location.pathname)){
+          window.location.href = 'https://gipnozfree.com/';
+        }
+      }
+    })();
+  </script>
   <title>Hypnosis from Scratch — Online Hypnosis Course</title>
   <meta name="description" content="Learn hypnosis from scratch. Gerald Kein's complete Omni Hypnosis Training course: 18 lessons from beginner to advanced. Original English audio. Lesson texts free, video by subscription.">
   <link rel="alternate" hreflang="ru" href="https://gipnozfree.com/index.html">
@@ -140,7 +150,7 @@
       <a href="subscribe.html">Subscribe</a>
 <a href="/en/login.html" id="auth-link" data-label="Sign in" data-href="/en/login.html" data-confirm="Sign out?">Sign in</a>
             <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">🌙</button>
-      <a href="../index.html" style="font-weight:600;color:var(--accent);">RU</a>
+      <a href="../index.html" onclick="localStorage.setItem('preferred_lang','ru')" style="font-weight:600;color:var(--accent);">RU</a>
     </nav>
     <button class="burger-btn" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>

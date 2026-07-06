@@ -14,6 +14,20 @@
   <meta name="google-site-verification" content="2F4JYeb27ZKVf0utjU8QS4GLRsW8CoZ3MSiE-cfqtn0" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function(){
+      var saved = localStorage.getItem('preferred_lang');
+      if(saved === 'ru'){
+        var path = window.location.pathname;
+        if(/^\/en(\/|$)/.test(path)){
+          var ruPath = path.replace(/^\/en/,'');
+          if(!ruPath || ruPath === '/') ruPath = '/';
+          window.location.href = 'https://gipnozfree.com' + ruPath;
+        }
+      }
+    })();
+  </script>
+
   <title>The Pretending Game (Eye Catalepsy) | Hypnosis from Scratch</title>
   <meta name="description" content="The Pretending Game: bypass the critical factor in under a minute using pretend play. Eye catalepsy technique from Gerald Kein's Omni Hypnosis Training Free script.">
   <link rel="stylesheet" href="../../css/style.css">
