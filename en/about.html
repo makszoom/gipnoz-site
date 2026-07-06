@@ -14,19 +14,7 @@
   <meta name="google-site-verification" content="2F4JYeb27ZKVf0utjU8QS4GLRsW8CoZ3MSiE-cfqtn0" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>
-    (function(){
-      var saved = localStorage.getItem('preferred_lang');
-      if(saved === 'ru'){
-        var path = window.location.pathname;
-        if(/^\/en(\/|$)/.test(path)){
-          var ruPath = path.replace(/^\/en/,'');
-          if(!ruPath || ruPath === '/') ruPath = '/';
-          window.location.href = 'https://gipnozfree.com' + ruPath;
-        }
-      }
-    })();
-  </script>
+  
 
 
   <title>About — Hypnosis from Scratch</title>
@@ -86,7 +74,6 @@
       <a href="subscribe.html">Subscribe</a>
 <a href="/en/login.html" id="auth-link" data-label="Sign in" data-href="/en/login.html" data-confirm="Sign out?">Sign in</a>
             <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">🌙</button>
-      <a href="../about.html" onclick="localStorage.setItem(\'preferred_lang\',\'ru\')" style="font-weight:600;color:var(--accent);">RU</a>
     </nav>
     <button class="burger-btn" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>

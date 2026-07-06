@@ -3,19 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>
-    (function(){
-      var saved = localStorage.getItem('preferred_lang');
-      if(saved === 'ru'){
-        var path = window.location.pathname;
-        if(/^\/en(\/|$)/.test(path)){
-          var ruPath = path.replace(/^\/en/,'');
-          if(!ruPath || ruPath === '/') ruPath = '/';
-          window.location.href = 'https://gipnozfree.com' + ruPath;
-        }
-      }
-    })();
-  </script>
+  
 
   <title>Privacy Policy — Calm Anchor</title>
   <style>
