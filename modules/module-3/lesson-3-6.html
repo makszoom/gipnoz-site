@@ -14,18 +14,7 @@
   <meta name="google-site-verification" content="2F4JYeb27ZKVf0utjU8QS4GLRsW8CoZ3MSiE-cfqtn0" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>
-    (function(){
-      var saved = localStorage.getItem('preferred_lang');
-      if(saved === 'en'){
-        var path = window.location.pathname;
-        if(!/^\/en(\/|$)/.test(path)){
-          var enPath = '/en' + (path === '/' ? '/index.html' : path);
-          window.location.href = 'https://gipnozfree.com' + enPath;
-        }
-      }
-    })();
-  </script>
+  
 
   <title>3.6 — Когда использовать: контекст и безопасность | Гипноз с нуля</title>
   <meta name="description" content="Когда применять быстрое и мгновенное наведение, а когда — классическое. Техника безопасности, противопоказания, контекст.">
@@ -88,7 +77,6 @@
       <a href="../../subscribe.html">Подписка</a>
 <a href="/login.html" id="auth-link" data-label="Войти" data-href="/login.html" data-confirm="Выйти?">Войти</a>
             <button class="theme-toggle" onclick="toggleTheme()" title="Сменить тему">🌙</button>
-      <a href="../../en/modules.html" onclick="localStorage.setItem(\'preferred_lang\',\'en\')" style="font-weight:600;color:var(--accent);">EN</a>
     </nav>
     <button class="burger-btn" onclick="toggleMenu()" aria-label="Меню"><span></span><span></span><span></span></button>
   </div>

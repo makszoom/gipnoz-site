@@ -14,17 +14,7 @@
   <meta name="google-site-verification" content="2F4JYeb27ZKVf0utjU8QS4GLRsW8CoZ3MSiE-cfqtn0" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>
-    (function(){
-      var lang = navigator.language || navigator.userLanguage;
-      var saved = localStorage.getItem('preferred_lang');
-      if(saved === 'en' || (!saved && lang && /^en/i.test(lang))){
-        if(!/^\/en(\/|$)/.test(window.location.pathname)){
-          window.location.href = 'https://gipnozfree.com/en/';
-        }
-      }
-    })();
-  </script>
+  <!-- Языковой выбор: кликни EN/RU -->
   <title>Гипноз с нуля — онлайн-курс гипноза</title>
   <meta name="description" content="Научитесь гипнозу с нуля. Полный курс по методике Джерри Кайн: от базовых техник до мгновенных индукций. Тексты уроков и скрипты бесплатно, видео по подписке.">
   <link rel="alternate" hreflang="ru" href="https://gipnozfree.com/index.html">
@@ -151,7 +141,7 @@
       <a href="subscribe.html">Подписка</a>
 <a href="/login.html" id="auth-link" data-label="Войти" data-href="/login.html" data-confirm="Выйти?">Войти</a>
             <button class="theme-toggle" onclick="toggleTheme()" title="Сменить тему">🌙</button>
-      <a href="en/index.html" onclick="localStorage.setItem('preferred_lang','en')" style="font-weight:600;color:var(--accent);">EN</a>
+      <a href="en/index.html" style="font-weight:600;color:var(--accent);">EN</a>
     </nav>
     <button class="burger-btn" onclick="toggleMenu()" aria-label="Меню"><span></span><span></span><span></span></button>
   </div>
