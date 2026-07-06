@@ -19,7 +19,7 @@
       var lang = navigator.language || navigator.userLanguage;
       var saved = localStorage.getItem('preferred_lang');
       if(saved === 'en' || (!saved && lang && /^en/i.test(lang))){
-        if(!window.location.pathname.startsWith('/gipnoz-site/en/')){
+        if(!/^\/en(\/|$)/.test(window.location.pathname)){
           window.location.href = 'https://gipnozfree.com/en/';
         }
       }
@@ -151,7 +151,7 @@
       <a href="subscribe.html">Подписка</a>
 <a href="/login.html" id="auth-link" data-label="Войти" data-href="/login.html" data-confirm="Выйти?">Войти</a>
             <button class="theme-toggle" onclick="toggleTheme()" title="Сменить тему">🌙</button>
-      <a href="en/index.html" style="font-weight:600;color:var(--accent);">EN</a>
+      <a href="en/index.html" onclick="localStorage.setItem('preferred_lang','en')" style="font-weight:600;color:var(--accent);">EN</a>
     </nav>
     <button class="burger-btn" onclick="toggleMenu()" aria-label="Меню"><span></span><span></span><span></span></button>
   </div>

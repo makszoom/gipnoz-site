@@ -14,6 +14,20 @@
   <meta name="google-site-verification" content="2F4JYeb27ZKVf0utjU8QS4GLRsW8CoZ3MSiE-cfqtn0" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function(){
+      var saved = localStorage.getItem('preferred_lang');
+      if(saved === 'ru'){
+        var path = window.location.pathname;
+        if(/^\/en(\/|$)/.test(path)){
+          var ruPath = path.replace(/^\/en/,'');
+          if(!ruPath || ruPath === '/') ruPath = '/';
+          window.location.href = 'https://gipnozfree.com' + ruPath;
+        }
+      }
+    })();
+  </script>
+
   <title>Shock Induction — Nervous System Overload | Hypnosis from Scratch</title>
   <meta name="description" content="Shock induction: nervous system overload bypasses critical factor. Arm pull, forehead tap, finger snap + 'Sleep!' Instant deep trance. Free script from... Free script.">
   <link rel="stylesheet" href="../../css/style.css">
