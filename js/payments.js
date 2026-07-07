@@ -87,11 +87,6 @@
     });
     html += '</div>';
 
-    // YooKassa notice for RU
-    if (isRu) {
-      html += '<p class="pricing-notice">⚠️ Оплата картой — в разработке. Пока доступна только криптовалюта (USDT) через <a href="/en/subscribe.html">EN-версию</a>.</p>';
-    }
-
     container.innerHTML = html;
 
     // Attach click handlers
