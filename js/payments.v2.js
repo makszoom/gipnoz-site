@@ -124,7 +124,8 @@
         body: JSON.stringify({
           uid: user.uid,
           plan: planId.includes('monthly') ? 'monthly' : 'lifetime',
-          amount: amount
+          amount: amount,
+          lang: isRu ? 'ru' : 'en'
         })
       })
       .then(function(r) { return r.json(); })

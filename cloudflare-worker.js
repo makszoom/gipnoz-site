@@ -227,13 +227,18 @@ export default {
         return new Response('Invalid JSON', { status: 400, headers: corsHeaders() });
       }
 
-      const { uid, plan, amount } = reqData;
+      const { uid, plan, amount, lang } = reqData;
       if (!uid || !plan || !amount) {
         return new Response(JSON.stringify({ error: 'Missing uid/plan/amount' }), {
           status: 400,
           headers: { 'Content-Type': 'application/json', ...corsHeaders() }
         });
       }
+
+      const isEn = lang === 'en';
+      const prefix = isEn ? '/en' : '';
+      const successUrl = `https://gipnozfree.com${prefix}/dashboard.html`;
+      const cancelUrl  = `https://gipnozfree.com${prefix}/subscribe.html`;
 
       // Map plan to NOWPayments product
       const productId = plan === 'monthly'
@@ -251,11 +256,15 @@ export default {
           price_amount: amount,
           price_currency: 'usd',
           order_id: 'uid:' + uid,
-          order_description: plan === 'monthly'
-            ? 'Gipnoz Monthly Subscription'
-            : 'Gipnoz Lifetime Access',
-          success_url: 'https://gipnozfree.com/dashboard.html',
-          cancel_url: 'https://gipnozfree.com/subscribe.html'
+          order_description: isEn
+            ? (plan === 'monthly'
+              ? 'Hypnosis from Scratch — Monthly Subscription'
+              : 'Hypnosis from Scratch — Lifetime Access')
+            : (plan === 'monthly'
+              ? 'Гипноз с нуля — Месячная подписка'
+              : 'Гипноз с нуля — Доступ навсегда'),
+          success_url: successUrl,
+          cancel_url: cancelUrl
         })
       });
 
