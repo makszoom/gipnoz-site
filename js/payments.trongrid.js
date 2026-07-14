@@ -136,20 +136,33 @@
       });
       html += '</ul>';
 
-      // Crypto payment box
+      // Crypto payment box with QR
+      var qrData = 'tron:' + USDT_ADDRESS + '?amount=' + (parseInt(plan.amountStr) * 1000000) + '&token=USDT';
+      var qrUrl = 'https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=' + encodeURIComponent(qrData);
+
       html += '<div class="crypto-box">';
       html += '<p class="crypto-label">💳 Pay with USDT (TRC-20)</p>';
+
+      // QR code
+      html += '<div class="qr-wrapper">';
+      html += '<img class="qr-code" src="' + qrUrl + '" alt="Scan to pay USDT">';
+      html += '<p class="qr-hint">Scan with your wallet app</p>';
+      html += '</div>';
+
+      // Address with copy
       html += '<div class="usdt-address-row">';
       html += '<code class="usdt-address">' + USDT_ADDRESS + '</code>';
       html += '<button class="btn btn-small btn-copy" data-action="copy">Copy</button>';
       html += '</div>';
+
+      // Steps: 3 simple steps
       html += '<ol class="crypto-steps">';
-      html += '<li>Open your wallet (Bybit, Trust Wallet, exchange)</li>';
-      html += '<li>Send <strong>$' + plan.amountStr + ' USDT</strong> to the address above</li>';
-      html += '<li>Copy the <strong>Transaction ID</strong> (txid) from your wallet</li>';
-      html += '<li>Paste below and click <strong>Verify</strong></li>';
+      html += '<li>Scan QR or copy address above</li>';
+      html += '<li>Send <strong>$' + plan.amountStr + ' USDT</strong> (TRC-20 network)</li>';
+      html += '<li>Copy <strong>txid</strong> from wallet, paste below, click Verify</li>';
       html += '</ol>';
-      html += '<input type="text" class="txid-input" placeholder="Paste txid here (64 chars)..." maxlength="64">';
+
+      html += '<input type="text" class="txid-input" placeholder="Paste txid here..." maxlength="64">';
       html += '<button class="btn btn-verify" data-plan="' + key + '">Verify Payment</button>';
       html += '<div class="verify-status"></div>';
       html += '</div>'; // /crypto-box
