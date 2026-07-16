@@ -1,0 +1,50 @@
+{
+  "id": "9aeeaa06c72b",
+  "key": "manual_9aeeaa",
+  "name": "manual_9aeeaa",
+  "claim": "Firebase auth-core.js must use absolute path /js/auth-core.js (not relative) and be loaded before </body> (not <head>) on static multi-directory sites",
+  "conditions": [
+    "absolute",
+    "auth-core",
+    "before",
+    "body",
+    "firebase",
+    "head",
+    "loaded",
+    "multi-directory",
+    "path",
+    "relative",
+    "sites",
+    "static",
+    "use"
+  ],
+  "evidence_ids": [
+    "2026-07-01T11:35:09.040555+00:00"
+  ],
+  "cluster_size": 1,
+  "canonical_salience": 8.0,
+  "staged_at": "2026-07-01T11:35:09.040555+00:00",
+  "status": "accepted",
+  "decisions": [
+    {
+      "ts": "2026-07-01T11:35:09.040555+00:00",
+      "action": "staged",
+      "reviewer": "learn"
+    },
+    {
+      "ts": "2026-07-01T11:35:09.087400+00:00",
+      "action": "graduated",
+      "reviewer": "learn.py",
+      "notes": "Relative paths broke on hub pages with different directory depths; absolute path works everywhere",
+      "provisional": false,
+      "evidence_snapshot": [
+        "2026-07-01T11:35:09.040555+00:00"
+      ],
+      "lessons_sha": "52850baf7662"
+    }
+  ],
+  "rejection_count": 0,
+  "accepted_at": "2026-07-01T11:35:09.087400+00:00",
+  "reviewer": "learn.py",
+  "rationale": "Relative paths broke on hub pages with different directory depths; absolute path works everywhere"
+}

@@ -304,6 +304,16 @@ body.menu-open { overflow: hidden; }
     border-bottom: 1px solid var(--border);
   }
   .auth-dropdown-menu a:last-child { border-bottom: none; }
+
+  /* Language banner on mobile */
+  .lang-banner {
+    padding: 8px 12px;
+    font-size: .8rem;
+    gap: 8px;
+    text-align: center;
+  }
+  .lang-banner span { line-height: 1.4; }
+  .lang-banner button { font-size: 1.1rem; }
 }
 
 /* ===== MAIN ===== */

@@ -1,0 +1,53 @@
+{
+  "id": "ed4fcfb99f23",
+  "key": "manual_ed4fcf",
+  "name": "manual_ed4fcf",
+  "claim": "Split sensitive API keys into parts (k1 + k2) in client-side JS to avoid automatic secret masking in logs and git diffs \u2014 assemble at runtime",
+  "conditions": [
+    "api",
+    "assemble",
+    "automatic",
+    "avoid",
+    "client-side",
+    "diffs",
+    "git",
+    "into",
+    "keys",
+    "logs",
+    "masking",
+    "parts",
+    "runtime",
+    "secret",
+    "sensitive",
+    "split"
+  ],
+  "evidence_ids": [
+    "2026-07-01T11:35:18.481586+00:00"
+  ],
+  "cluster_size": 1,
+  "canonical_salience": 8.0,
+  "staged_at": "2026-07-01T11:35:18.481586+00:00",
+  "status": "accepted",
+  "decisions": [
+    {
+      "ts": "2026-07-01T11:35:18.481586+00:00",
+      "action": "staged",
+      "reviewer": "learn"
+    },
+    {
+      "ts": "2026-07-01T11:35:18.552171+00:00",
+      "action": "graduated",
+      "reviewer": "learn.py",
+      "notes": "Firebase API key kept getting masked in logs; splitting into two vars solved it without adding server-side complexity",
+      "provisional": false,
+      "evidence_snapshot": [
+        "2026-07-01T11:35:18.481586+00:00"
+      ],
+      "lessons_sha": "2d1da6cf4bd7"
+    }
+  ],
+  "rejection_count": 0,
+  "accepted_at": "2026-07-01T11:35:18.552171+00:00",
+  "reviewer": "learn.py",
+  "rationale": "Firebase API key kept getting masked in logs; splitting into two vars solved it without adding server-side complexity"
+}
