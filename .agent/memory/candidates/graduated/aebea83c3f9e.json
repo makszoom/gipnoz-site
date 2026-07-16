@@ -1,0 +1,74 @@
+{
+  "id": "aebea83c3f9e",
+  "key": "manual_aebea8",
+  "name": "manual_aebea8",
+  "claim": "After git push to GitHub Pages custom domain, always verify raw GitHub first. Wait 5-10 minutes before trusting live output. If raw shows the fix but live doesn't, it's a Cloudflare cache delay \u2014 NOT a deploy failure. Do NOT re-edit or re-push based on stale live output. If GitHub Pages hasn't rebuilt, trigger with: git commit --allow-empty -m 'trigger: rebuild' && git push origin master",
+  "conditions": [
+    "after",
+    "allow-empty",
+    "always",
+    "based",
+    "before",
+    "cache",
+    "cloudflare",
+    "commit",
+    "custom",
+    "delay",
+    "deploy",
+    "doesn",
+    "domain",
+    "failure",
+    "first",
+    "fix",
+    "git",
+    "github",
+    "hasn",
+    "live",
+    "master",
+    "minutes",
+    "origin",
+    "output",
+    "pages",
+    "push",
+    "raw",
+    "re-edit",
+    "re-push",
+    "rebuild",
+    "rebuilt",
+    "shows",
+    "stale",
+    "trigger",
+    "trusting",
+    "verify",
+    "wait"
+  ],
+  "evidence_ids": [
+    "2026-07-06T19:04:15.000971+00:00"
+  ],
+  "cluster_size": 1,
+  "canonical_salience": 8.0,
+  "staged_at": "2026-07-06T19:04:15.000971+00:00",
+  "status": "accepted",
+  "decisions": [
+    {
+      "ts": "2026-07-06T19:04:15.000971+00:00",
+      "action": "staged",
+      "reviewer": "learn"
+    },
+    {
+      "ts": "2026-07-06T19:04:15.176328+00:00",
+      "action": "graduated",
+      "reviewer": "learn.py",
+      "notes": "Cloudflare edge nodes serve stale HTML for 3-10 minutes even after Purge Everything + Development Mode. Re-editing based on stale output wastes time and risks regressions. Raw GitHub (raw.githubusercontent.com) is the source of truth.",
+      "provisional": false,
+      "evidence_snapshot": [
+        "2026-07-06T19:04:15.000971+00:00"
+      ],
+      "lessons_sha": "07eb977008e8"
+    }
+  ],
+  "rejection_count": 0,
+  "accepted_at": "2026-07-06T19:04:15.176328+00:00",
+  "reviewer": "learn.py",
+  "rationale": "Cloudflare edge nodes serve stale HTML for 3-10 minutes even after Purge Everything + Development Mode. Re-editing based on stale output wastes time and risks regressions. Raw GitHub (raw.githubusercontent.com) is the source of truth."
+}

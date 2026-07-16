@@ -1,0 +1,55 @@
+{
+  "id": "a5ff33b745de",
+  "key": "manual_a5ff33",
+  "name": "manual_a5ff33",
+  "claim": "Bunny Stream Token Authentication broke video loading on static sites \u2014 prefer simple client-side gating.js over server-side signing for non-DRM content",
+  "conditions": [
+    "authentication",
+    "broke",
+    "bunny",
+    "client-side",
+    "content",
+    "gating",
+    "loading",
+    "non-drm",
+    "over",
+    "prefer",
+    "server-side",
+    "signing",
+    "simple",
+    "sites",
+    "static",
+    "stream",
+    "token",
+    "video"
+  ],
+  "evidence_ids": [
+    "2026-07-01T11:35:05.156874+00:00"
+  ],
+  "cluster_size": 1,
+  "canonical_salience": 8.0,
+  "staged_at": "2026-07-01T11:35:05.156874+00:00",
+  "status": "accepted",
+  "decisions": [
+    {
+      "ts": "2026-07-01T11:35:05.156874+00:00",
+      "action": "staged",
+      "reviewer": "learn"
+    },
+    {
+      "ts": "2026-07-01T11:35:05.231769+00:00",
+      "action": "graduated",
+      "reviewer": "learn.py",
+      "notes": "Token Auth added complexity without meaningful protection; gating.js with CSS class .lesson-video proved reliable on 148-page site",
+      "provisional": false,
+      "evidence_snapshot": [
+        "2026-07-01T11:35:05.156874+00:00"
+      ],
+      "lessons_sha": "0a1782e29583"
+    }
+  ],
+  "rejection_count": 0,
+  "accepted_at": "2026-07-01T11:35:05.231769+00:00",
+  "reviewer": "learn.py",
+  "rationale": "Token Auth added complexity without meaningful protection; gating.js with CSS class .lesson-video proved reliable on 148-page site"
+}

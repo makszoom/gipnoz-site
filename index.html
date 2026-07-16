@@ -80,19 +80,6 @@
   <script>
 (function(){var t=localStorage.getItem("theme");if(t==="light"){document.documentElement.setAttribute("data-theme","light")}})();
 </script>
-<!-- Language banner: show once for EN browsers on RU homepage -->
-<script>
-(function(){
-  var saved = localStorage.getItem('preferred_lang');
-  var navLang = navigator.language || navigator.userLanguage || '';
-  var isEn = saved === 'en' || (!saved && /^en/i.test(navLang));
-  var dismissed = localStorage.getItem('lang_banner_dismissed');
-  if(isEn && !dismissed && window.location.pathname === '/'){
-    var banner = document.getElementById('lang-banner');
-    if(banner) banner.style.display = '';
-  }
-})();
-</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -148,6 +135,18 @@
   <span>This site is in Russian. <a href="en/index.html">Switch to English →</a></span>
   <button onclick="document.getElementById('lang-banner').style.display='none';localStorage.setItem('lang_banner_dismissed','1');" aria-label="Close">×</button>
 </div>
+<script>
+(function(){
+  var saved = localStorage.getItem('preferred_lang');
+  var navLang = navigator.language || navigator.userLanguage || '';
+  var isEn = saved === 'en' || (!saved && /^en/i.test(navLang));
+  var dismissed = localStorage.getItem('lang_banner_dismissed');
+  if(isEn && !dismissed && (window.location.pathname === '/' || window.location.pathname === '/index.html')){
+    var banner = document.getElementById('lang-banner');
+    if(banner) banner.style.display = '';
+  }
+})();
+</script>
 
 <header>
   <div class="header-inner">

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "agentic_stack_version": "0.18.0",
+  "abs_target": "C:\\Users\\valter\\hermes-projects\\gipnoz-site",
+  "installed_at": "2026-07-01T11:34:42Z",
+  "adapters": {
+    "hermes": {
+      "installed_at": "2026-07-01T11:34:42Z",
+      "files_written": [],
+      "files_overwritten": [],
+      "files_alerted": [
+        "AGENTS.md"
+      ],
+      "file_results": [
+        {
+          "dst": "AGENTS.md",
+          "result": "merge_alert"
+        }
+      ],
+      "post_install_results": []
+    }
+  }
+}

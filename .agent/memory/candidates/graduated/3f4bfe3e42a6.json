@@ -1,0 +1,55 @@
+{
+  "id": "3f4bfe3e42a6",
+  "key": "manual_3f4bfe",
+  "name": "manual_3f4bfe",
+  "claim": "For static education sites with video paywall: use .lesson-video CSS class for gating placeholder and .lesson-video-player for the iframe wrapper \u2014 keep gating logic in a single gating.js file",
+  "conditions": [
+    "class",
+    "css",
+    "education",
+    "file",
+    "gating",
+    "iframe",
+    "keep",
+    "lesson-video",
+    "lesson-video-player",
+    "logic",
+    "paywall",
+    "placeholder",
+    "single",
+    "sites",
+    "static",
+    "use",
+    "video",
+    "wrapper"
+  ],
+  "evidence_ids": [
+    "2026-07-01T11:35:13.542996+00:00"
+  ],
+  "cluster_size": 1,
+  "canonical_salience": 8.0,
+  "staged_at": "2026-07-01T11:35:13.542996+00:00",
+  "status": "accepted",
+  "decisions": [
+    {
+      "ts": "2026-07-01T11:35:13.542996+00:00",
+      "action": "staged",
+      "reviewer": "learn"
+    },
+    {
+      "ts": "2026-07-01T11:35:13.597962+00:00",
+      "action": "graduated",
+      "reviewer": "learn.py",
+      "notes": "Pattern proven on 148-page bilingual site; single gating.js with language detection handles both RU (free after login) and EN (subscription required)",
+      "provisional": false,
+      "evidence_snapshot": [
+        "2026-07-01T11:35:13.542996+00:00"
+      ],
+      "lessons_sha": "1503a8c40c56"
+    }
+  ],
+  "rejection_count": 0,
+  "accepted_at": "2026-07-01T11:35:13.597962+00:00",
+  "reviewer": "learn.py",
+  "rationale": "Pattern proven on 148-page bilingual site; single gating.js with language detection handles both RU (free after login) and EN (subscription required)"
+}
