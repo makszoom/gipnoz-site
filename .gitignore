@@ -7,3 +7,4 @@ Thumbs.db
 .hermes/
 node_modules/
 wrangler.toml
+.env
