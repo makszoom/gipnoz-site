@@ -17,3 +17,8 @@ gsc-service-account.json
 transcript_1.txt
 gsc-reports/
 __pycache__/
+
+# Внутреннее и не для публичного репозитория (локально)
+AGENTS.md
+PLAN.md
+tools/03_english_audio.mp3
