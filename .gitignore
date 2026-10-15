@@ -12,3 +12,8 @@ wrangler.toml
 # Сервисный ключ Google Search Console (секрет, не коммитить)
 gsc-service-account.json
 *-service-account.json
+
+# Локальные служебные файлы (не в git)
+transcript_1.txt
+gsc-reports/
+__pycache__/

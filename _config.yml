@@ -1,0 +1,19 @@
+# GitHub Pages: не публиковать служебные, черновые и платные материалы.
+# Файлы остаются в репозитории, но сайт их не отдаёт.
+exclude:
+  - AGENTS.md
+  - PLAN.md
+  - README.md
+  - docs/
+  - scripts/
+  - gsc-reports/
+  - "*.py"
+  - cloudflare-worker.js
+  - package.json
+  - package-lock.json
+  - transcript_1.txt
+  - EOF
+  - PYEOF
+  - node_modules/
+  - .agent/
+  - .hermes/
