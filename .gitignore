@@ -8,3 +8,7 @@ Thumbs.db
 node_modules/
 wrangler.toml
 .env
+
+# Сервисный ключ Google Search Console (секрет, не коммитить)
+gsc-service-account.json
+*-service-account.json
